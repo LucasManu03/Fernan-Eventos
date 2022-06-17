@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/img/logoConFondoBlanco.png">
+</head>
+<body class="bodyContacto">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/img/logomio.png" alt=""></a>
+        </div>
+      <ul>
+        <li><a href="../index.html">INICIO</a></li>
+        <li>
+            <a href="./eventos.html">EVENTOS</a>
+            <ul class="navbar__desplegable">
+                <li><a href="./casamientos.html">CASAMIENTOS</a></li>
+                <li><a href="./cumple.html">CUMPLEAÑOS</a></li>
+                <li><a href="./quince.html">FIESTA DE 15</a></li>
+            </ul>
+        </li>
+        <li><a href="./ubicacion.html">UBICACION</a></li>
+        <li><a href="./contacto.html">CONTACTO</a></li>
+      </ul>
+      <div class="redes">
+        <a href="https://www.facebook.com/" target="_blank"> <img src="/assets/img/face-01.png" alt=""></a>
+        <a href="https://www.instagram.com/" target="_blank"></a><img src="/assets/img/insta-01.png" alt=""></a>
+        <a href="https://twitter.com/" target="_blank"></a><img src="/assets/img/twit-01.png" alt=""></a>
+    </div>
+    </nav>
+        <div class="fondoCon">
+        </div>
+    <main class="mainCon">
+        <div class="formulario">
+        <form action="">
+            <div class="info">
+              <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+              <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
+              <input type="email" name="email" id="email" placeholder=" Ingrese su email" required>
+            </div>
+            <div class="sexo">
+                <h3>Sexo:</h3>
+                <label> Hombre</label>
+                <input type="radio" name="sexo" value="h">
+                <label>Mujer </label>
+                <input type="radio" name="sexo" value="m">
+                <label>Otro</label>
+                <input type="radio" name="sexo" value="o">
+            </div>
+            <div class="razon">
+              <h4>Razón del contacto:</h4>
+              <select name="contacto" required>
+                <option value="ca">Casamiento</option>
+                <option value="c">Cumpleaños</option>
+                <option value="f">Fiesta de 15</option>
+                <option value="o">Otro</option>
+              </select>
+            </div>
+            <div class="text">
+              <textarea name="consulta" id="consulta" cols="30" rows="10">Ingrese su consulta</textarea>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Reiniciar">
+           </div>
+        </form>
+        </div>
+
+    </main>
+    <footer class="footerCon">
+        <h5 class="copy">Copyright © 2022-2022</h5>
+    </footer>
+    
+</body>
+</html>
