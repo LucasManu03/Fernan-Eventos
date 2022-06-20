@@ -9,7 +9,7 @@
     background-color:rgba(222, 202, 191, 0.7);
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto 700px auto 100px;
+    grid-template-rows: auto 700px auto auto;
     grid-template-areas: "navbar navbar navbar navbar"
                          "header header header header"
                          "main main main main"
@@ -266,14 +266,20 @@
         background-color:rgba(222, 202, 191, 0.7);
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: auto 700px auto 100px;
+        grid-template-rows: auto 600px auto auto;
         grid-template-areas: "navbarCon navbarCon navbarCon navbarCon"
-                            "mainCon mainCon mainCon mainCon"
+                            "headerCon headerCon headerCon headerCon"
                              "mainCon mainCon mainCon mainCon"
                              "footerCon footerCon footerCon footerCon";
 }
 .navbar {
     grid-area: navbarCon ;
+}
+.headerCon {
+    grid-area: headerCon;
+    background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+    background-size: cover;
+
 }
 
 .mainCon {
@@ -282,13 +288,15 @@
 }
 .footerCon {
     grid-area: footerCon;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
 }
-.fondoCon {
-    background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
-    background-size: cover;
-    height: 600px;
-    width: 1600px;
-    position: absolute;
+.copy {
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: end;
 }
 .formulario {
     display: flex;
@@ -297,12 +305,14 @@
     align-items: center;
     position: relative;
     background-color: #827397;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top:450px;
+    margin-left: 150px;
+    margin-right: 150px;
     padding: 60px;
     border-radius: 8px;
     box-shadow: 0px 0px 5px 1px #827397;
+    top: -110px;
+
+    
 }
 .info {
     display: flex;
@@ -333,8 +343,9 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
-                                                     /* Adaptacion de Index */
+/*Responsive*/
 @media(max-width:768px){
+        /*Hoja Index*/
     .boda__texto {
         height: 350px;
     }
@@ -364,8 +375,15 @@
     .fondo__logo img{
         max-width: 200px;
     }
+    /*Hoja de Contacto*/
+    .bodyContacto {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto 430px auto auto;
+}
 }
 @media(max-width:620px){
+        /*Hoja Index*/
     .redes{
         display: none;
     }
@@ -380,9 +398,23 @@
         width: 560px;
         height: 392px;
     }
-
+    /*Hoja Contacto*/
+    .info input{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+    .sexo{
+        font-size: 14px;
+    }
+    .bodyContacto {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto 350px auto auto;
+}
 }
 @media(max-width:576px){
+        /*Hoja Index*/
     .redes {
         display: none;
     }
@@ -401,8 +433,20 @@
         width: 522px;
         height: 392px;
     }
+    /*Hoja de Contacto*/
+    .formulario{
+        margin-left: 70px;
+        margin-right: 70px;
+        padding-top: 30px;
+    }
+    .bodyContacto {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto 370px auto auto;
+}
 }
 @media(max-width:480px){
+        /*Hoja Index*/
     .logo img{
         margin: 0;
     }
@@ -422,8 +466,20 @@
     .quince__texto{
         margin-right: 15px;
     }
+    /*Hoja de contacto*/
+    .formulario{
+        padding-top: 20px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .bodyContacto {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto 300px auto auto;
+}
 }
 @media (max-width:320px){
+    /*Hoja Index*/
     .logo img {
         display: none;
     }
@@ -441,4 +497,11 @@
     .quince__texto{
         margin-right: 50px;
     }
+    /*Hoja de Contacto*/
+    .formulario{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
 }
