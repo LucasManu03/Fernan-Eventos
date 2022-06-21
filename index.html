@@ -7,12 +7,12 @@
     <title>Fernan | Inicio</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" href="./assets/img/logomio.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="body">
     <nav class="navbar">
         <div class="logo">
-            <a href="./index.html"><img src="./assets/img/logomio.png" alt=""></a>
+            <a href="./index.html"><img data-aos="flip-left" data-aos-duration="3000" src="./assets/img/logomio.png" alt=""></a>
         </div>
       <ul>
         <li><a href="./index.html">INICIO</a></li>
@@ -35,7 +35,7 @@
     </nav>
     <header class="header">
       <div class="fondo">
-        <div class="fondo__logo"><img src="./assets/img/logomio.png" alt=""></div>
+        <div class="fondo__logo"><img data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="300"src="./assets/img/logomio.png" alt=""></div>
       </div>
     </header>
     <main class="main">
@@ -69,6 +69,9 @@
     <footer class="footer">
         <h5 class="copy"> Eventos FernandezCopyright © 2022-2022. Todos los desrechos reservados</h5>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
