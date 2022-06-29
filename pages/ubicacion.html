@@ -4,49 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubicacion</title>
+    <title>Fernan | Inicio</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="./assets/img/logomio.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="../index.html"><img src="../assets/img/logomio.png" alt=""></a>
+<body id="bodyUbicacion">
+    <header id="headerUbi">
+      <nav class="navbar navbar-expand-lg bg-light row col-12 m-0" id="navbarUbi">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"><img src="/assets/img/logoNavbar.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/productos.html">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/ubicacion.html">Ubicacion</a>
+            </li>
+          </ul>
         </div>
-      <ul>
-        <li><a href="../index.html">INICIO</a></li>
-        <li>
-            <a href="./eventos.html">EVENTOS</a>
-            <ul class="navbar__desplegable">
-                <li><a href="./casamientos.html">CASAMIENTOS</a></li>
-                <li><a href="./cumple.html">CUMPLEAÑOS</a></li>
-                <li><a href="./quince.html">FIESTA DE 15</a></li>
-            </ul>
-        </li>
-        <li><a href="./ubicacion.html">UBICACION</a></li>
-        <li><a href="./contacto.html">CONTACTO</a></li>
-      </ul>
-      <div class="redes">
-        <a href="https://www.facebook.com/" target="_blank"> <img src="/assets/img/face-01.png" alt=""></a>
-        <a href="https://www.instagram.com/" target="_blank"></a><img src="/assets/img/insta-01.png" alt=""></a>
-        <a href="https://twitter.com/" target="_blank"></a><img src="/assets/img/twit-01.png" alt=""></a>
-    </div>
-    </nav>
+      </div>
+      </nav>
     </header>
-    <h1>¿Donde encontrarnos?</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit itaque vitae distinctio unde porro! Ex possimus minus ut eius nemo consectetur dolores veniam inventore, perspiciatis sequi officia officiis consequuntur esse! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio asperiores architecto recusandae vitae ipsa amet, assumenda dolorem, corporis quod animi ex consequatur accusamus, alias est magni impedit consequuntur non reiciendis.</p>
-    <main>
+    <main id="mainUbi">
+        <div id="textoMapa">
+            <h3>Donde nos encontramos?</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore fuga enim cumque perspiciatis quidem nobis.</p>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <i class="fa-solid fa-map-location-dot"></i>
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016713276846!2d-58.38375908488558!3d-34.60373888045949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1653410023573!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
     </main>
-    <footer>
-        <h5>Medios de Pago</h5>
-        <ul>
-            <li>Mercado Pago</li>
-            <li>Transferencia</li>
-            <li>Efectivo</li>
-            <li>Tarjeta de credito y debito</li>
-        </ul>
-        <h5>Copyright © 2022-2022</h5>
+    <footer id="footerUbi">
+        <h5>Eventos Fernan Copyright © 2022-2022. Todos los derechos reservados</h5>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

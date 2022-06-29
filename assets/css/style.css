@@ -23,16 +23,21 @@
 .logo img:hover{
     transform: scale(1.1);
 }
+#navbarNav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
 .navbar {
     grid-area: navbar;
-    width: 100%;
-    background-color: rgba(222, 202, 191, 0.85);
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     z-index: 1;
 }
+/*
 .navbar ul li ul {
     display: none;
 }
@@ -64,6 +69,7 @@
 .redes img:hover{
     transform: scale(1.3);
 }
+*/
 .header{
     grid-area: header;
     background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
@@ -257,91 +263,74 @@
     background-color: #827397;
     width: 70%;
     margin-left: 240px;
+}
 
 
-                                              /* Hoja de Contacto */
-
+/* Hoja de Contacto */
+#bodyContacto {
+    background-color:rgba(222, 202, 191, 0.7);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 600px auto auto;
+    grid-template-areas: "navbarCon navbarCon navbarCon navbarCon"
+                        "headerCon headerCon headerCon headerCon"
+                         "mainCon mainCon mainCon mainCon"
+                         "footerCon footerCon footerCon footerCon";
 }
-.bodyContacto {
-        background-color:rgba(222, 202, 191, 0.7);
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: auto 600px auto auto;
-        grid-template-areas: "navbarCon navbarCon navbarCon navbarCon"
-                            "headerCon headerCon headerCon headerCon"
-                             "mainCon mainCon mainCon mainCon"
-                             "footerCon footerCon footerCon footerCon";
-}
-.navbar {
-    grid-area: navbarCon ;
-}
-.headerCon {
+#navbarCon{
+    grid-area: navbarCon}
+#headerCon{
     grid-area: headerCon;
     background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
     background-size: cover;
-
 }
-
-.mainCon {
+#mainCon{
     grid-area: mainCon;
-    height: 600px;
 }
-.footerCon {
+#footerCon{
     grid-area: footerCon;
-    display: flex;
-    align-items: flex-end;
-    justify-content: end;
 }
-.copy {
-    display: flex;
-    align-items: flex-end;
-    align-content: flex-end;
-    justify-content: end;
+#bodyContacto {
+        background-color:rgba(222, 202, 191, 0.7);
 }
-.formulario {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+div.card{
     background-color: #827397;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding: 60px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px 1px #827397;
-    top: -110px;
+}
+/*Hoja Ubicacion*/
+#bodyUbicacion {
+    background-color:rgba(222, 202, 191, 0.7);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 600px auto auto;
+    grid-template-areas: "navbarUbi navbarUbi navbarUbi navbarUbi"
+                        "headerUbi headerUbi headerUbi headerUbi"
+                         "mainUbi mainUbi mainUbi mainUbi"
+                         "footerUbi footerUbi footerUbi footerUbi";
+}
+#navbarUbi{
+    grid-area: navbarUbi
+}
+#headerUbi{
+    grid-area: headerUbi;
+    background-image: url(/assets/img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#mainUbi{
+    grid-area: mainUbi;
+}
+#footerUbi{
+    grid-area: footerUbi;
+}
+#textoMapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 
-    
 }
-.info {
-    display: flex;
-    flex-direction: column;
-}
-.info input {
-    margin: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 23%;
-    padding-right: 23%;
-}
-.sexo {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-.razon {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-.text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+#textoMapa i {
+    font-size: 100px;
 }
 /*Responsive*/
 @media(max-width:768px){
