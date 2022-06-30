@@ -1,0 +1,15 @@
+.header{
+    grid-area: header;
+    background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+    background-size: cover;
+    margin-bottom: 35px;
+    .fondo__logo {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color:rgba(222, 202, 191, 0.9);
+        border-radius: 20px;
+    }
+}

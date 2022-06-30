@@ -1,0 +1,163 @@
+/*Responsive*/
+@media(max-width:768px){
+    /*Hoja Index*/
+.boda__texto {
+    height: 350px;
+}
+.boda__imagen{
+    height: 392px;
+}
+.cumple__texto{
+    height: 350px;
+}
+.cumple__imagen{
+    width: 708px;
+}
+.quince__texto {
+    height: 350px;
+}
+.quince__imagen{
+    height: 392px;
+}
+.body {
+    display: grid;
+    grid-template-rows: auto 500px auto 100px;
+}
+.fondo{
+    position: relative;
+    margin-top: 250px;
+}
+.fondo__logo img{
+    max-width: 200px;
+}
+/*Hoja de Contacto*/
+.bodyContacto {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 430px auto auto;
+}
+}
+@media(max-width:620px){
+    /*Hoja Index*/
+.redes{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.navbar img {
+    margin-right: 60px;
+}
+.main img {
+    width: 560px;
+    height: 392px;
+}
+/*Hoja Contacto*/
+.info input{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+.sexo{
+    font-size: 14px;
+}
+.bodyContacto {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 350px auto auto;
+}
+}
+@media(max-width:576px){
+    /*Hoja Index*/
+.redes {
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.navbar img {
+    margin-right: 60px;
+}
+.cumple__imagen{
+    width: 522px;
+    height: 392px;
+}
+.boda__imagen{
+    width: 522px;
+    height: 392px;
+}
+/*Hoja de Contacto*/
+.formulario{
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 30px;
+}
+.bodyContacto {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 370px auto auto;
+}
+}
+@media(max-width:480px){
+    /*Hoja Index*/
+.logo img{
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+.main img {
+    margin: 0;
+}
+.boda__texto{
+    margin-right: 15px;
+}
+.cumple__texto{
+    margin-right: 15px;
+}
+.quince__texto{
+    margin-right: 15px;
+}
+/*Hoja de contacto*/
+.formulario{
+    padding-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.bodyContacto {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 300px auto auto;
+}
+}
+@media (max-width:320px){
+/*Hoja Index*/
+.logo img {
+    display: none;
+}
+.navbar{
+    height: 50px;
+    font-size: 12px;
+}
+
+.boda__texto{
+    margin-right: 50px;
+}
+.cumple__texto{
+    margin-right: 50px;
+}
+.quince__texto{
+    margin-right: 50px;
+}
+/*Hoja de Contacto*/
+.formulario{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+}
+
