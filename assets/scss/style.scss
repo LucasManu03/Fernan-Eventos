@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 @import "reset";
 @import "navbar";
 @import "header";
 @import "tarjetas";
 @import "footer";
 @import "media";
+$colorClaro: rgb(222, 202, 191);
+$colorOscuro: #827397;
 .body {
     background-color:rgba(222, 202, 191, 0.7);
     display: grid;

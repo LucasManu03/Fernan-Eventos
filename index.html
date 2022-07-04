@@ -12,13 +12,13 @@
     <link rel="icon" href="./assets/img/logomio.png">
 </head>
 <body class="body">
-    <nav class="navbar navbar-expand-lg bg-light row col-12 m-0">
+    <nav class="navbar navbar-expand-lg bg-light row col-12 m-0" >
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="./assets/img/logoNavbar.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+          <div class="collapse navbar-collapse justify-content-around" id="navbarNavUl">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
@@ -43,15 +43,19 @@
     </header>
     <main class="main">
         <div class="boda">
-            <img class="boda__imagen" src="./assets/img/fotodeboda3.jpg" alt="">
-            <div class="boda__texto">
-                <h2>Casamientos</h2>
-                <p>¡Que tu fiesta no se convienta en estres! ¡Nosotros nos ocupamos!</p>
-                <a href="./pages/casamientos.html"><button class="boda__boton"> Más Informacion</button></a>
-            </div>
+          <div class="boda__texto">
+            <h2>Casamientos</h2>
+            <p>¡Que tu fiesta no se convienta en estres! ¡Nosotros nos ocupamos!</p>
+            <a href="./pages/casamientos.html"><button class="boda__boton"> Más Informacion</button></a>
+          </div>
+          <div class="boda__imagen" >
+            <img src="./assets/img/fotodeboda3.jpg" alt="">
+          </div>
         </div>
         <div class="cumple">
-            <img class="cumple__imagen" src="./assets/img/fiesta50.jpg" alt="">
+          <div class="cumple__imagen">
+            <img src="./assets/img/fiesta50 (3).jpg" alt="">
+          </div>
             <div class="cumple__texto">
                 <h3> Cumpleaños</h3>
                 <p> ¡Nos encargamos de la decoracion de tu Cumpleaños!</p>
@@ -59,18 +63,20 @@
             </div>
         </div>
         <div class="quince">
-            <img class="quince__imagen" src="./assets/img/fiestade15.jpg" alt="">
             <div class="quince__texto">
                 <h4>Fiesta de 15</h4>
                 <p> ¡Organizamos tu cumpleaños Nro 15 para que sea UNICO! </p>
                 <a href="./pages/quince.html"><button class="quince__boton"> Más Informacion</button></a>
+            </div>
+            <div class="quince__imagen">
+              <img src="./assets/img/mesaDe15.jpg" alt="">
             </div>
 
         </div>
        
     </main>
     <footer class="footer">
-        <h5 class="copy"> Eventos FernandezCopyright © 2022-2022. Todos los desrechos reservados</h5>
+        <h5 class="copy"> Fernan Eventos Copyright © 2022-2022. Todos los derechos reservados</h5>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
