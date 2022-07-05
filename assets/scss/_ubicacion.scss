@@ -1,0 +1,49 @@
+#bodyUbicacion {
+    background-color:rgba(222, 202, 191, 0.7);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 600px auto auto;
+    grid-template-areas: "navbarUbi navbarUbi navbarUbi navbarUbi"
+                        "headerUbi headerUbi headerUbi headerUbi"
+                         "mainUbi mainUbi mainUbi mainUbi"
+                         "footerUbi footerUbi footerUbi footerUbi";
+}
+#navbarUbi{
+    grid-area: navbarUbi
+}
+#headerUbi{
+    grid-area: headerUbi;
+    background-image: url(/assets/img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#mainUbi{
+    grid-area: mainUbi;
+}
+#footerUbi{
+    grid-area: footerUbi;
+}
+#textoMapa i {
+    font-size: 100px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    border: solid transparent;
+    border-radius: 0px;
+    .ubi{
+    font-size: 140px;
+    }
+    .h5Ubi{
+        margin: 18px;
+        font-family: Bebas Neue;
+        font-size: 38px;
+        text-decoration: underline;
+        color: rgb(224, 224, 224);
+    }
+    .pUbi{
+        padding: 0px 160px;
+        color: rgb(224, 224, 224);
+        text-align: center;     
+    }
+}

@@ -1,0 +1,25 @@
+#bodyCump {
+    background-color:rgba(222, 202, 191, 0.7);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 500px auto auto;
+    grid-template-areas: "navCump navCump navCump navCump"
+                        "headerCump headerCump headerCump headerCump"
+                         "mainCump mainCump mainCump mainCump"
+                         "footerCump footerCump footerCump footerCump";
+}
+#navCump{
+    grid-area: navCump;
+}
+#headerCump{
+    grid-area: headerCump;
+    background-image: url(/assets/img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#mainCump{
+    grid-area: mainCump;
+}
+#footerCump{
+    grid-area: footerCump;
+}

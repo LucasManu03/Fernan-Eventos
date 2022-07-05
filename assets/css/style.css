@@ -1,235 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.navbar {
-  grid-area: navbar;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 1;
-}
-.navbar #navbarNavUl {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-.header {
-  grid-area: header;
-  background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
-  background-size: cover;
-  margin-bottom: 35px;
-}
-.header .fondo__logo {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background-color: rgba(222, 202, 191, 0.9);
-  border-radius: 20px;
-}
-
-.main {
-  grid-area: main;
-}
-.main .boda {
-  display: flex;
-  background-color: rgb(88, 68, 116);
-}
-.main .boda .boda__imagen img {
-  max-height: auto;
-  position: relative;
-}
-.main .boda .boda__texto {
-  text-align: center;
-  position: relative;
-  justify-content: flex-start;
-  background-color: rgb(88, 68, 116);
-  width: auto;
-  height: auto;
-  margin-right: 15px;
-}
-.main .boda .boda__texto h2 {
-  color: white;
-  font-family: Bebas Neue;
-  font-size: 56px;
-  padding: 20px;
-}
-.main .boda .boda__texto p {
-  color: white;
-  font-family: Arimo;
-  font-size: 28px;
-  padding: 15px;
-}
-.main .boda .boda__texto .boda__boton {
-  color: #fff;
-  white-space: nowrap;
-  border: solid #fff;
-  font-size: 28px;
-  width: auto;
-  font-family: Bebas Neue;
-  background-color: transparent;
-  position: relative;
-  margin-top: 30px;
-  padding: 8px;
-}
-.main .boda .boda__texto .boda__boton:hover {
-  background: #fff;
-  color: rgb(88, 68, 116);
-}
-.main .cumple {
-  display: flex;
-  background-color: rgb(88, 68, 116);
-  margin-top: 35px;
-}
-.main .cumple .cumple__imagen img {
-  max-height: auto;
-  position: relative;
-}
-.main .cumple .cumple__texto {
-  text-align: center;
-  position: relative;
-  justify-content: flex-start;
-  background-color: rgb(88, 68, 116);
-  width: auto;
-  height: auto;
-  margin-right: 15px;
-}
-.main .cumple .cumple__texto h3 {
-  color: white;
-  font-family: Bebas Neue;
-  font-size: 56px;
-  padding: 20px;
-}
-.main .cumple .cumple__texto p {
-  color: white;
-  font-family: Arimo;
-  font-size: 28px;
-  padding: 15px;
-}
-.main .cumple .cumple__texto .cumple__boton {
-  color: #fff;
-  white-space: nowrap;
-  border: solid #fff;
-  font-size: 28px;
-  width: auto;
-  font-family: Bebas Neue;
-  background-color: transparent;
-  position: relative;
-  margin-top: 30px;
-  padding: 8px;
-}
-.main .cumple .cumple__texto .cumple__boton:hover {
-  background: #fff;
-  color: rgb(88, 68, 116);
-}
-.main .quince {
-  display: flex;
-  background-color: rgb(88, 68, 116);
-  margin-top: 35px;
-}
-.main .quince .quince__imagen img {
-  max-height: auto;
-  position: relative;
-}
-.main .quince .quince__texto {
-  text-align: center;
-  position: relative;
-  justify-content: flex-start;
-  background-color: rgb(88, 68, 116);
-  width: auto;
-  height: auto;
-  margin-right: 15px;
-}
-.main .quince .quince__texto h4 {
-  color: white;
-  font-family: Bebas Neue;
-  font-size: 56px;
-  padding: 20px;
-}
-.main .quince .quince__texto p {
-  color: white;
-  font-family: Arimo;
-  font-size: 28px;
-  padding: 15px;
-}
-.main .quince .quince__texto .quince__boton {
-  color: #fff;
-  white-space: nowrap;
-  border: solid #fff;
-  font-size: 28px;
-  width: auto;
-  font-family: Bebas Neue;
-  background-color: transparent;
-  position: relative;
-  margin-top: 30px;
-  padding: 8px;
-}
-.main .quince .quince__texto .quince__boton:hover {
-  background: #fff;
-  color: rgb(88, 68, 116);
-}
-
-.footer {
-  grid-area: footer;
-  display: flex;
-  align-items: flex-end;
-  justify-content: end;
-}
-.footer .copy {
-  font-size: 15px;
-  display: flex;
-  align-items: flex-end;
-  align-content: flex-end;
-  justify-content: end;
-}
-
 /*Responsive*/
 @media (max-width: 768px) {
   /*Hoja Index*/
-  .boda__texto {
-    height: 350px;
-  }
-
-  .boda__imagen {
-    height: 392px;
-  }
-
-  .cumple__texto {
-    height: 350px;
-  }
-
-  .cumple__imagen {
-    width: 708px;
-  }
-
-  .quince__texto {
-    height: 350px;
-  }
-
-  .quince__imagen {
-    height: 392px;
-  }
-
-  .body {
-    display: grid;
-    grid-template-rows: auto 500px auto 100px;
-  }
-
-  .fondo {
-    position: relative;
-    margin-top: 250px;
-  }
-
-  .fondo__logo img {
-    max-width: 200px;
+  .fondo__logo {
+    display: none;
   }
 
   /*Hoja de Contacto*/
@@ -237,6 +13,22 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 430px auto auto;
+  }
+
+  .mailTelefono {
+    width: 278px;
+  }
+
+  /*Hoja de Ubicacion*/
+  #mainUbi {
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  #mainUbi .card .pUbi {
+    padding: 10px;
   }
 }
 @media (max-width: 620px) {
@@ -260,14 +52,15 @@
   }
 
   /*Hoja Contacto*/
-  .info input {
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
+  #formulario #imagenCon {
+    margin-left: 120px;
+  }
+  #formulario p {
+    text-align: center;
   }
 
-  .sexo {
-    font-size: 14px;
+  #inputText.card-body {
+    margin: 0px;
   }
 
   .bodyContacto {
@@ -348,7 +141,7 @@
     margin-right: 80px;
   }
 
-  .bodyContacto {
+  #bodyContacto {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 300px auto auto;
@@ -378,55 +171,31 @@
   }
 
   /*Hoja de Contacto*/
-  .formulario {
-    margin-left: 30px;
-    margin-right: 30px;
+  #bodyContacto #formulario #imagenCon {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 10px 75px;
+  }
+  #bodyContacto #formulario .pCon {
+    text-align: center;
+    margin: 10px 0px;
+  }
+  #bodyContacto #formulario .mailTelefono {
+    margin-left: 10px;
+  }
+
+  #inputText.card-body {
+    margin: 0px;
   }
 }
-.body {
-  background-color: rgba(222, 202, 191, 0.7);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 700px auto auto;
-  grid-template-areas: "navbar navbar navbar navbar" "header header header header" "main main main main" "footer footer footer footer";
+/*Hoja de Ubicacion*/
+#mainUbi {
+  margin-right: 10px;
+  margin-left: 0px;
 }
-
-/* Hoja de Contacto */
-#bodyContacto {
-  background-color: rgba(222, 202, 191, 0.7);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 600px auto auto;
-  grid-template-areas: "navbarCon navbarCon navbarCon navbarCon" "headerCon headerCon headerCon headerCon" "mainCon mainCon mainCon mainCon" "footerCon footerCon footerCon footerCon";
+#mainUbi .card {
+  margin-right: 40px;
 }
-
-#navbarCon {
-  grid-area: navbarCon;
-}
-
-#headerCon {
-  grid-area: headerCon;
-  background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
-  background-size: cover;
-}
-
-#mainCon {
-  grid-area: mainCon;
-}
-
-#footerCon {
-  grid-area: footerCon;
-}
-
-#bodyContacto {
-  background-color: rgba(222, 202, 191, 0.7);
-}
-
-div.card {
-  background-color: #827397;
-}
-
-/*Hoja Ubicacion*/
 #bodyUbicacion {
   background-color: rgba(222, 202, 191, 0.7);
   display: grid;
@@ -456,4 +225,335 @@ div.card {
 
 #textoMapa i {
   font-size: 100px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  border: solid transparent;
+  border-radius: 0px;
+}
+.card .ubi {
+  font-size: 140px;
+}
+.card .h5Ubi {
+  margin: 18px;
+  font-family: Bebas Neue;
+  font-size: 38px;
+  text-decoration: underline;
+  color: rgb(224, 224, 224);
+}
+.card .pUbi {
+  padding: 0px 160px;
+  color: rgb(224, 224, 224);
+  text-align: center;
+}
+
+#bodyContacto {
+  background-color: rgba(222, 202, 191, 0.7);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 600px auto auto;
+  grid-template-areas: "navbar navbar navbar navbar" "headerCon headerCon headerCon headerCon" "mainCon mainCon mainCon mainCon" "footerCon footerCon footerCon footerCon";
+}
+
+#headerCon {
+  grid-area: headerCon;
+  background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#mainCon {
+  grid-area: mainCon;
+}
+
+#footerCon {
+  grid-area: footerCon;
+}
+
+#bodyContacto {
+  background-color: rgba(222, 202, 191, 0.7);
+}
+
+div.card {
+  background-color: #827397;
+}
+
+#inputText {
+  margin-left: 200px;
+  font-family: Arimo;
+  font-size: 18px;
+}
+
+.contactoLateral .pCon {
+  font-family: Arimo;
+  color: #fff;
+  font-size: 30px;
+  text-decoration: underline;
+}
+.contactoLateral #imagenCon {
+  border-radius: 60px;
+  margin-top: 40px;
+  justify-content: center;
+}
+.contactoLateral .mailTelefono {
+  color: #fff;
+  font-family: Arimo;
+}
+
+.body {
+  background-color: rgba(222, 202, 191, 0.7);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 700px auto auto;
+  grid-template-areas: "navbar navbar navbar navbar" "header header header header" "main main main main" "footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+  background-size: cover;
+  margin-bottom: 35px;
+  margin-right: 0;
+}
+.header .fondo__logo {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(222, 202, 191, 0.9);
+  border-radius: 20px;
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+.footer .copy {
+  font-size: 15px;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  justify-content: end;
+}
+
+.main {
+  grid-area: main;
+}
+.main .boda {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(88, 68, 116);
+}
+.main .boda .boda__texto {
+  text-align: center;
+  position: relative;
+  background-color: rgb(88, 68, 116);
+  margin-left: 200px;
+  width: 450px;
+}
+.main .boda .boda__texto h2 {
+  color: white;
+  font-family: Bebas Neue;
+  font-size: 56px;
+  padding: 20px;
+}
+.main .boda .boda__texto p {
+  color: white;
+  font-family: Arimo;
+  font-size: 28px;
+}
+.main .boda .boda__texto .boda__boton {
+  color: #fff;
+  white-space: nowrap;
+  border: solid #fff;
+  font-size: 28px;
+  width: auto;
+  font-family: Bebas Neue;
+  background-color: transparent;
+  position: relative;
+  margin-top: 30px;
+  padding: 8px;
+}
+.main .boda .boda__texto .boda__boton:hover {
+  background: #fff;
+  color: rgb(88, 68, 116);
+}
+.main .cumple {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(88, 68, 116);
+  margin-top: 35px;
+}
+.main .cumple .cumple__texto {
+  text-align: center;
+  background-color: rgb(88, 68, 116);
+  margin-right: 200px;
+  width: 450px;
+}
+.main .cumple .cumple__texto h3 {
+  color: white;
+  font-family: Bebas Neue;
+  font-size: 56px;
+  padding: 20px;
+}
+.main .cumple .cumple__texto p {
+  color: white;
+  font-family: Arimo;
+  font-size: 28px;
+}
+.main .cumple .cumple__texto .cumple__boton {
+  color: #fff;
+  white-space: nowrap;
+  border: solid #fff;
+  font-size: 28px;
+  width: auto;
+  font-family: Bebas Neue;
+  background-color: transparent;
+  position: relative;
+  margin-top: 30px;
+  padding: 8px;
+}
+.main .cumple .cumple__texto .cumple__boton:hover {
+  background: #fff;
+  color: rgb(88, 68, 116);
+}
+.main .quince {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(88, 68, 116);
+  margin-top: 35px;
+}
+.main .quince .quince__texto {
+  text-align: center;
+  position: relative;
+  background-color: rgb(88, 68, 116);
+  margin-left: 200px;
+  width: 450px;
+}
+.main .quince .quince__texto h4 {
+  color: white;
+  font-family: Bebas Neue;
+  font-size: 56px;
+  padding: 20px;
+}
+.main .quince .quince__texto p {
+  color: white;
+  font-family: Arimo;
+  font-size: 28px;
+}
+.main .quince .quince__texto .quince__boton {
+  color: #fff;
+  white-space: nowrap;
+  border: solid #fff;
+  font-size: 28px;
+  width: auto;
+  font-family: Bebas Neue;
+  background-color: transparent;
+  position: relative;
+  margin-top: 30px;
+  padding: 8px;
+}
+.main .quince .quince__texto .quince__boton:hover {
+  background: #fff;
+  color: rgb(88, 68, 116);
+}
+
+#bodyCas {
+  background-color: rgba(222, 202, 191, 0.7);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 500px auto auto;
+  grid-template-areas: "navCas navCas navCas navCas" "headerCas headerCas headerCas headerCas" "mainCas mainCas mainCas mainCas" "footerCas footerCas footerCas footerCas";
+}
+
+#navCas {
+  grid-area: navCas;
+}
+
+#headerCas {
+  grid-area: headerCas;
+  background-image: url(/assets/img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#mainCas {
+  grid-area: mainCas;
+}
+
+#footerCas {
+  grid-area: footerCas;
+}
+
+#bodyCump {
+  background-color: rgba(222, 202, 191, 0.7);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 500px auto auto;
+  grid-template-areas: "navCump navCump navCump navCump" "headerCump headerCump headerCump headerCump" "mainCump mainCump mainCump mainCump" "footerCump footerCump footerCump footerCump";
+}
+
+#navCump {
+  grid-area: navCump;
+}
+
+#headerCump {
+  grid-area: headerCump;
+  background-image: url(/assets/img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#mainCump {
+  grid-area: mainCump;
+}
+
+#footerCump {
+  grid-area: footerCump;
+}
+
+#bodyQuin {
+  background-color: rgba(222, 202, 191, 0.7);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 500px auto auto;
+  grid-template-areas: "navQuin navQuin navQuin navQuin" "headerQuin headerQuin headerQuin headerQuin" "mainQuin mainQuin mainQuin mainQuin" "footerQuin footerQuin footerQuin footerQuin";
+}
+
+#navQuin {
+  grid-area: navQuin;
+}
+
+#headerQuin {
+  grid-area: headerQuin;
+  background-image: url(/assets/img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#mainQuin {
+  grid-area: mainQuin;
+}
+
+#footerQuin {
+  grid-area: footerQuin;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */

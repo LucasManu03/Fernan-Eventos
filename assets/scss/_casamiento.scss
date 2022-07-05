@@ -1,0 +1,25 @@
+#bodyCas {
+    background-color:rgba(222, 202, 191, 0.7);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 500px auto auto;
+    grid-template-areas: "navCas navCas navCas navCas"
+                        "headerCas headerCas headerCas headerCas"
+                         "mainCas mainCas mainCas mainCas"
+                         "footerCas footerCas footerCas footerCas";
+}
+#navCas{
+    grid-area: navCas;
+}
+#headerCas{
+    grid-area: headerCas;
+    background-image: url(/assets/img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#mainCas{
+    grid-area: mainCas;
+}
+#footerCas{
+    grid-area: footerCas;
+}

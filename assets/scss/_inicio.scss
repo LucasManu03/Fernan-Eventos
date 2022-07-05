@@ -1,22 +1,60 @@
+.body {
+    background-color:rgba(222, 202, 191, 0.7);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 700px auto auto;
+    grid-template-areas: "navbar navbar navbar navbar"
+                         "header header header header"
+                         "main main main main"
+                         "footer footer footer footer";
+}
+.header{
+    grid-area: header;
+    background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+    background-size: cover;
+    margin-bottom: 35px;
+    margin-right: 0;
+    .fondo__logo {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color:rgba(222, 202, 191, 0.9);
+        border-radius: 20px;
+    }
+}
+.navbar{
+    grid-area: navbar;
+}
+.main{
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    .copy {
+        font-size: 15px;
+        display: flex;
+        align-items: flex-end;
+        align-content: flex-end;
+        justify-content: end;
+    }    
+}
 .main {
     grid-area: main;
     .boda{
         display: flex;
+        justify-content: space-between;
         background-color: rgb(88, 68, 116);
-        .boda__imagen {
-            img{
-                max-height:auto;
-                position: relative;
-            }
-        }
         .boda__texto {
             text-align: center;
             position: relative;
-            justify-content: flex-start;
             background-color: rgb(88, 68, 116);
-            width:auto;
-            height: auto;
-            margin-right: 15px ;
+            margin-left: 200px;
+            width: 450px;
             h2 {
                 color: white;
                 font-family: Bebas Neue;
@@ -27,7 +65,6 @@
                 color: white;
                 font-family: Arimo;
                 font-size: 28px;
-                padding: 15px ;
             }
             .boda__boton{
                 color:#fff;
@@ -49,23 +86,14 @@
     }
     .cumple {
         display: flex;
+        justify-content: space-between;
         background-color: rgb(88, 68, 116);
         margin-top: 35px ;
-        .cumple__imagen {
-            img{
-                max-height:auto;
-                position: relative;
-            }
-
-        }
         .cumple__texto {
             text-align: center;
-            position: relative;
-            justify-content: flex-start;
             background-color: rgb(88, 68, 116);
-            width:auto;
-            height: auto;
-            margin-right: 15px ;
+            margin-right: 200px;
+            width: 450px;
             h3 {
                 color: white;
                 font-family: Bebas Neue;
@@ -76,7 +104,6 @@
                 color: white;
                 font-family: Arimo;
                 font-size: 28px;
-                padding: 15px ;
             }
             .cumple__boton{
                 color:#fff;
@@ -95,28 +122,18 @@
                 }
             }
         }
-
-
     }
     .quince {
         display: flex;
+        justify-content: space-between;
         background-color: rgb(88, 68, 116);
         margin-top: 35px;
-        .quince__imagen{
-            img{
-                max-height:auto;
-                position: relative;
-            }
-           
-        }
         .quince__texto{
             text-align: center;
             position: relative;
-            justify-content: flex-start;
             background-color: rgb(88, 68, 116);
-            width:auto;
-            height: auto;
-            margin-right: 15px ;
+            margin-left: 200px;
+            width: 450px;
             h4 {
                 color: white;
                 font-family: Bebas Neue;
@@ -127,7 +144,6 @@
                 color: white;
                 font-family: Arimo;
                 font-size: 28px;
-                padding: 15px ;
             }
             .quince__boton{
                 color:#fff;

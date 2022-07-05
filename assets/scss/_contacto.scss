@@ -1,0 +1,54 @@
+#bodyContacto {
+    background-color:rgba(222, 202, 191, 0.7);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 600px auto auto;
+    grid-template-areas: "navbar navbar navbar navbar"
+                        "headerCon headerCon headerCon headerCon"
+                         "mainCon mainCon mainCon mainCon"
+                         "footerCon footerCon footerCon footerCon";
+}
+
+#headerCon{
+    grid-area: headerCon;
+    background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#mainCon{
+    grid-area: mainCon;
+}
+#footerCon{
+    grid-area: footerCon;
+}
+#bodyContacto {
+        background-color:rgba(222, 202, 191, 0.7);
+}
+div.card{
+    background-color: #827397;
+}
+#inputText{
+    margin-left: 200px;
+    font-family: Arimo;
+    font-size: 18px;
+}
+.contactoLateral{
+    .pCon{
+        font-family: Arimo;
+        color: #fff;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+    #imagenCon{
+    
+        border-radius: 60px;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .mailTelefono{
+        color: #fff;
+        font-family: Arimo;
+        
+        
+    }
+}

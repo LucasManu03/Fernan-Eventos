@@ -1,80 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
-@import "reset";
-@import "navbar";
-@import "header";
-@import "tarjetas";
-@import "footer";
 @import "media";
+@import "ubicacion";
+@import "contacto";
+@import "inicio";
+@import "casamiento";
+@import "cumple";
+@import "quince";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 $colorClaro: rgb(222, 202, 191);
 $colorOscuro: #827397;
-.body {
-    background-color:rgba(222, 202, 191, 0.7);
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto 700px auto auto;
-    grid-template-areas: "navbar navbar navbar navbar"
-                         "header header header header"
-                         "main main main main"
-                         "footer footer footer footer";
-}
-/* Hoja de Contacto */
-#bodyContacto {
-    background-color:rgba(222, 202, 191, 0.7);
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto 600px auto auto;
-    grid-template-areas: "navbarCon navbarCon navbarCon navbarCon"
-                        "headerCon headerCon headerCon headerCon"
-                         "mainCon mainCon mainCon mainCon"
-                         "footerCon footerCon footerCon footerCon";
-}
-#navbarCon{
-    grid-area: navbarCon}
-#headerCon{
-    grid-area: headerCon;
-    background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
-    background-size: cover;
-}
-#mainCon{
-    grid-area: mainCon;
-}
-#footerCon{
-    grid-area: footerCon;
-}
-#bodyContacto {
-        background-color:rgba(222, 202, 191, 0.7);
-}
-div.card{
-    background-color: #827397;
-}
-/*Hoja Ubicacion*/
-#bodyUbicacion {
-    background-color:rgba(222, 202, 191, 0.7);
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto 600px auto auto;
-    grid-template-areas: "navbarUbi navbarUbi navbarUbi navbarUbi"
-                        "headerUbi headerUbi headerUbi headerUbi"
-                         "mainUbi mainUbi mainUbi mainUbi"
-                         "footerUbi footerUbi footerUbi footerUbi";
-}
-#navbarUbi{
-    grid-area: navbarUbi
-}
-#headerUbi{
-    grid-area: headerUbi;
-    background-image: url(/assets/img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-#mainUbi{
-    grid-area: mainUbi;
-}
-#footerUbi{
-    grid-area: footerUbi;
-}
-#textoMapa i {
-    font-size: 100px;
-}

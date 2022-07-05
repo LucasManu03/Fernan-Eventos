@@ -1,0 +1,25 @@
+#bodyQuin {
+    background-color:rgba(222, 202, 191, 0.7);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 500px auto auto;
+    grid-template-areas: "navQuin navQuin navQuin navQuin"
+                        "headerQuin headerQuin headerQuin headerQuin"
+                         "mainQuin mainQuin mainQuin mainQuin"
+                         "footerQuin footerQuin footerQuin footerQuin";
+}
+#navQuin{
+    grid-area: navQuin;
+}
+#headerQuin{
+    grid-area: headerQuin;
+    background-image: url(/assets/img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#mainQuin{
+    grid-area: mainQuin;
+}
+#footerQuin{
+    grid-area: footerQuin;
+}
