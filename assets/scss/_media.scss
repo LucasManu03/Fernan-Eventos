@@ -1,9 +1,18 @@
 /*Responsive*/
+@media(max-width:1200px){
+  
+}
+@media(max-width:992px){
+
+}
 @media(max-width:768px){
     /*Hoja Index*/
 
 .fondo__logo {
     display: none
+}
+div .boda_texto{
+    margin-left: 10px;
 }
 /*Hoja de Contacto*/
 .bodyContacto {

@@ -8,6 +8,10 @@
     display: none;
   }
 
+  div .boda_texto {
+    margin-left: 10px;
+  }
+
   /*Hoja de Contacto*/
   .bodyContacto {
     display: grid;
@@ -264,6 +268,10 @@
   background-attachment: fixed;
 }
 
+#navbarCon {
+  grid-area: navbar;
+}
+
 #mainCon {
   grid-area: mainCon;
 }
@@ -302,22 +310,21 @@ div.card {
   font-family: Arimo;
 }
 
-.body {
+#body {
   background-color: rgba(222, 202, 191, 0.7);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 700px auto auto;
+  grid-template-rows: auto 600px auto auto;
   grid-template-areas: "navbar navbar navbar navbar" "header header header header" "main main main main" "footer footer footer footer";
 }
 
-.header {
+#header {
   grid-area: header;
   background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
   background-size: cover;
   margin-bottom: 35px;
-  margin-right: 0;
 }
-.header .fondo__logo {
+#header .fondo__logo {
   position: absolute;
   top: 45%;
   left: 50%;
@@ -327,21 +334,13 @@ div.card {
   border-radius: 20px;
 }
 
-.navbar {
-  grid-area: navbar;
-}
-
-.main {
-  grid-area: main;
-}
-
-.footer {
+#footer {
   grid-area: footer;
   display: flex;
   align-items: flex-end;
   justify-content: end;
 }
-.footer .copy {
+#footer .copy {
   font-size: 15px;
   display: flex;
   align-items: flex-end;
@@ -349,33 +348,32 @@ div.card {
   justify-content: end;
 }
 
-.main {
+#main {
   grid-area: main;
 }
-.main .boda {
+#main .boda {
   display: flex;
   justify-content: space-between;
   background-color: rgb(88, 68, 116);
 }
-.main .boda .boda__texto {
+#main .boda .boda__texto {
   text-align: center;
   position: relative;
   background-color: rgb(88, 68, 116);
-  margin-left: 200px;
   width: 450px;
 }
-.main .boda .boda__texto h2 {
+#main .boda .boda__texto h2 {
   color: white;
   font-family: Bebas Neue;
   font-size: 56px;
   padding: 20px;
 }
-.main .boda .boda__texto p {
+#main .boda .boda__texto p {
   color: white;
   font-family: Arimo;
   font-size: 28px;
 }
-.main .boda .boda__texto .boda__boton {
+#main .boda .boda__texto .boda__boton {
   color: #fff;
   white-space: nowrap;
   border: solid #fff;
@@ -387,34 +385,33 @@ div.card {
   margin-top: 30px;
   padding: 8px;
 }
-.main .boda .boda__texto .boda__boton:hover {
+#main .boda .boda__texto .boda__boton:hover {
   background: #fff;
   color: rgb(88, 68, 116);
 }
-.main .cumple {
+#main .cumple {
   display: flex;
   justify-content: space-between;
   background-color: rgb(88, 68, 116);
   margin-top: 35px;
 }
-.main .cumple .cumple__texto {
+#main .cumple .cumple__texto {
   text-align: center;
   background-color: rgb(88, 68, 116);
-  margin-right: 200px;
   width: 450px;
 }
-.main .cumple .cumple__texto h3 {
+#main .cumple .cumple__texto h3 {
   color: white;
   font-family: Bebas Neue;
   font-size: 56px;
   padding: 20px;
 }
-.main .cumple .cumple__texto p {
+#main .cumple .cumple__texto p {
   color: white;
   font-family: Arimo;
   font-size: 28px;
 }
-.main .cumple .cumple__texto .cumple__boton {
+#main .cumple .cumple__texto .cumple__boton {
   color: #fff;
   white-space: nowrap;
   border: solid #fff;
@@ -426,35 +423,34 @@ div.card {
   margin-top: 30px;
   padding: 8px;
 }
-.main .cumple .cumple__texto .cumple__boton:hover {
+#main .cumple .cumple__texto .cumple__boton:hover {
   background: #fff;
   color: rgb(88, 68, 116);
 }
-.main .quince {
+#main .quince {
   display: flex;
   justify-content: space-between;
   background-color: rgb(88, 68, 116);
   margin-top: 35px;
 }
-.main .quince .quince__texto {
+#main .quince .quince__texto {
   text-align: center;
   position: relative;
   background-color: rgb(88, 68, 116);
-  margin-left: 200px;
   width: 450px;
 }
-.main .quince .quince__texto h4 {
+#main .quince .quince__texto h4 {
   color: white;
   font-family: Bebas Neue;
   font-size: 56px;
   padding: 20px;
 }
-.main .quince .quince__texto p {
+#main .quince .quince__texto p {
   color: white;
   font-family: Arimo;
   font-size: 28px;
 }
-.main .quince .quince__texto .quince__boton {
+#main .quince .quince__texto .quince__boton {
   color: #fff;
   white-space: nowrap;
   border: solid #fff;
@@ -466,7 +462,7 @@ div.card {
   margin-top: 30px;
   padding: 8px;
 }
-.main .quince .quince__texto .quince__boton:hover {
+#main .quince .quince__texto .quince__boton:hover {
   background: #fff;
   color: rgb(88, 68, 116);
 }

@@ -15,3 +15,14 @@
 }
 $colorClaro: rgb(222, 202, 191);
 $colorOscuro: #827397;
+$estiloTexto:(
+    color: white,
+    font: Arimo,
+    fondo: rgb(88, 68, 116),
+);
+@mixin titulo ($color,$fuente,$tamano,$padding){
+    color: $color;
+    font-family: $fuente;
+    font-size: $tamano;
+    padding: $padding;
+}

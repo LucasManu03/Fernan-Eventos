@@ -15,6 +15,9 @@
     background-size: cover;
     background-attachment: fixed;
 }
+#navbarCon{
+    grid-area: navbar;
+}
 #mainCon{
     grid-area: mainCon;
 }

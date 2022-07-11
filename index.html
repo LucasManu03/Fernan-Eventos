@@ -1,55 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernan | Inicio</title>
+    <title>Fernan Eventos</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/img/logomio.png">
 </head>
-<body class="body">
-<header class="header">
-  <nav class="navbar navbar-expand-lg fixed-top row col-12 m-0" id="navbarUbi" style="background-color:rgba(136, 116, 148,0.8)">
+<body id="body">
+<header class="row" id="header">
+  <nav class="navbar navbar-expand-lg fixed-top row col-12 m-0" id="navbarCon" style="background-color:rgba(136, 116, 148,0.8)">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html"><img src="/assets/img/logoNavbar.png" alt=""></a>
+      <a class="navbar-brand" href="/index.html"><img src="./assets/img/logoNavbar.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-around " id="navbarNavUl">
-      <ul class="navbar-nav ">
-        <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="/index.html">INICIO</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="/index.html">INICIO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             EVENTOS
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:rgba(136, 116, 148,0.8)">
-            <li><a class="dropdown-item text-white" href="./pages/casamientos.html">CASAMIENTOS</a></li>
-            <li><a class="dropdown-item text-white" href="./pages/cumple.html">CUMPLEAÑOS</a></li>
-            <li><a class="dropdown-item text-white" href="./pages/quince.html">FIESTA DE 15</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="./pages/contacto.html">CONTACTO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="./pages/ubicacion.html">UBICACION</a>
-        </li>
-      </ul>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:rgba(136, 116, 148,0.8)">
+              <li><a class="dropdown-item text-white" href="./pages/casamientos.html">CASAMIENTOS</a></li>
+              <li><a class="dropdown-item text-white" href="./pages/cumple.html">CUMPLEAÑOS</a></li>
+              <li><a class="dropdown-item text-white" href="./pages/quince.html">FIESTA DE 15</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./pages/contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./pages/ubicacion.html">UBICACION</a>
+          </li>
+        </ul>
+        </div>
     </div>
-  </div>
   </nav>
       <div class="fondo">
         <div class="fondo__logo"><img data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="300" src="./assets/img/logomio.png" alt=""></div>
       </div>
-    </header>
-    <main class="main">
+</header>
+    <main id="main">
         <div class="boda">
           <div class="boda__texto">
             <h2>Casamientos</h2>
@@ -82,7 +81,7 @@
         </div>
        
     </main>
-    <footer class="footer">
+    <footer id="footer">
         <h5 class="copy"> Fernan Eventos Copyright © 2022-2022. Todos los derechos reservados</h5>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
