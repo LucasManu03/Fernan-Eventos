@@ -45,9 +45,7 @@
         background-color: map-get($estiloTexto, fondo );
         .boda__texto {
             text-align: center;
-            position: relative;
             background-color: map-get($estiloTexto, fondo );
-            width: 450px;
             h2 {
                 @include titulo(white, Bebas Neue, 56px, 20px)
             }
