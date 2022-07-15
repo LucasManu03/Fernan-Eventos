@@ -42,16 +42,20 @@
     .boda{
         display: flex;
         justify-content: space-between;
-        background-color: map-get($estiloTexto, fondo );
+        background-color: rgb(88, 68, 116),;
         .boda__texto {
             text-align: center;
-            background-color: map-get($estiloTexto, fondo );
+            background-color: rgb(88, 68, 116),;
+            padding: 20px;
             h2 {
-                @include titulo(white, Bebas Neue, 56px, 20px)
+                color: #fff;
+                font-family: Bebas Neue;
+                font-size: 56px;
+                padding: 20px;
             }
             p {
                 color: white;
-                font-family: map-get($estiloTexto, font );
+                font-family: Montserrat;
                 font-size: 28px;
             }
             .boda__boton{
@@ -75,45 +79,77 @@
     .cumple {
         display: flex;
         justify-content: space-between;
-        background-color: map-get($estiloTexto, fondo );
+        background-color: rgb(88, 68, 116),;
         margin-top: 35px ;
         .cumple__texto {
             text-align: center;
-            background-color: map-get($estiloTexto,fondo );
-            width: 450px;
+            background-color: rgb(88, 68, 116),;
+            padding: 20px;
             h3 {
-                @include titulo(white, Bebas Neue, 56px, 20px)
+                color: #fff;
+                font-family: Bebas Neue;
+                font-size: 56px;
+                padding: 20px;
             }
             p {
                 color: white;
-                font-family: map-get($estiloTexto, font );
+                font-family: Montserrat;
                 font-size: 28px;
             }
             .cumple__boton{
-                @extend .boda__boton;
+                color:#fff;
+                white-space: nowrap;
+                border: solid #fff;
+                font-size: 28px;
+                width: auto;
+                font-family: Bebas Neue;
+                background-color: transparent;
+                position: relative;
+                margin-top: 30px;
+                padding: 8px;
+                &:hover{
+                    background: #fff;
+                    color: rgb(88, 68, 116) ; 
+                }
             }
         }
     }
     .quince {
         display: flex;
         justify-content: space-between;
-        background-color: map-get($estiloTexto, fondo );
+        background-color: rgb(88, 68, 116),;
         margin-top: 35px;
         .quince__texto{
             text-align: center;
             position: relative;
-            background-color: map-get($estiloTexto, fondo );
-            width: 450px;
+            background-color: rgb(88, 68, 116),;
+            padding: 20px;
             h4 {
-                @include titulo(white, Bebas Neue, 56px, 20px)
+                color: #fff;
+                font-family: Bebas Neue;
+                font-size: 56px;
+                padding: 20px;
             }
             p {
                 color: white;
-                font-family: map-get($estiloTexto, font );
+                font-family: Montserrat;
                 font-size: 28px;
             }
             .quince__boton{
-                @extend .boda__boton;
+                color:#fff;
+                white-space: nowrap;
+                border: solid #fff;
+                font-size: 28px;
+                width: auto;
+                font-family: Bebas Neue;
+                background-color: transparent;
+                position: relative;
+                margin-top: 30px;
+                padding: 8px;
+                &:hover{
+                    background: #fff;
+                    color: rgb(88, 68, 116) ; 
+                }
             }
         }       
     }

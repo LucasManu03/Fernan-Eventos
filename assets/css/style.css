@@ -1,210 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
-/*Responsive*/
-@media (max-width: 768px) {
-  /*Hoja Index*/
-  .fondo__logo {
-    display: none;
-  }
-
-  div .boda_texto {
-    margin-left: 10px;
-  }
-
-  /*Hoja de Contacto*/
-  .bodyContacto {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 430px auto auto;
-  }
-
-  .mailTelefono {
-    width: 278px;
-  }
-
-  /*Hoja de Ubicacion*/
-  #mainUbi {
-    margin-right: 80px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-  }
-  #mainUbi .card .pUbi {
-    padding: 10px;
-  }
-}
-@media (max-width: 620px) {
-  /*Hoja Index*/
-  .redes {
-    display: none;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: center;
-  }
-
-  .navbar img {
-    margin-right: 60px;
-  }
-
-  .main img {
-    width: 560px;
-    height: 392px;
-  }
-
-  /*Hoja Contacto*/
-  #formulario #imagenCon {
-    margin-left: 120px;
-  }
-  #formulario p {
-    text-align: center;
-  }
-
-  #inputText.card-body {
-    margin: 0px;
-  }
-
-  .bodyContacto {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 350px auto auto;
-  }
-}
-@media (max-width: 576px) {
-  /*Hoja Index*/
-  .redes {
-    display: none;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: center;
-  }
-
-  .navbar img {
-    margin-right: 60px;
-  }
-
-  .cumple__imagen {
-    width: 522px;
-    height: 392px;
-  }
-
-  .boda__imagen {
-    width: 522px;
-    height: 392px;
-  }
-
-  /*Hoja de Contacto*/
-  .formulario {
-    margin-left: 70px;
-    margin-right: 70px;
-    padding-top: 30px;
-  }
-
-  .bodyContacto {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 370px auto auto;
-  }
-}
-@media (max-width: 480px) {
-  /*Hoja Index*/
-  .logo img {
-    margin: 0;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: center;
-  }
-
-  .main img {
-    margin: 0;
-  }
-
-  .boda__texto {
-    margin-right: 15px;
-  }
-
-  .cumple__texto {
-    margin-right: 15px;
-  }
-
-  .quince__texto {
-    margin-right: 15px;
-  }
-
-  /*Hoja de contacto*/
-  .formulario {
-    padding-top: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-
-  #bodyContacto {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 300px auto auto;
-  }
-}
-@media (max-width: 320px) {
-  /*Hoja Index*/
-  .logo img {
-    display: none;
-  }
-
-  .navbar {
-    height: 50px;
-    font-size: 12px;
-  }
-
-  .boda__texto {
-    margin-right: 50px;
-  }
-
-  .cumple__texto {
-    margin-right: 50px;
-  }
-
-  .quince__texto {
-    margin-right: 50px;
-  }
-
-  /*Hoja de Contacto*/
-  #bodyContacto #formulario #imagenCon {
-    max-width: 150px;
-    max-height: 150px;
-    margin: 10px 75px;
-  }
-  #bodyContacto #formulario .pCon {
-    text-align: center;
-    margin: 10px 0px;
-  }
-  #bodyContacto #formulario .mailTelefono {
-    margin-left: 10px;
-  }
-
-  #inputText.card-body {
-    margin: 0px;
-  }
-}
-/*Hoja de Ubicacion*/
-#mainUbi {
-  margin-right: 10px;
-  margin-left: 0px;
-}
-#mainUbi .card {
-  margin-right: 40px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 #bodyUbicacion {
   background-color: rgba(222, 202, 191, 0.7);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 600px auto auto;
+  grid-template-rows: auto 400px auto auto;
   grid-template-areas: "navbarUbi navbarUbi navbarUbi navbarUbi" "headerUbi headerUbi headerUbi headerUbi" "mainUbi mainUbi mainUbi mainUbi" "footerUbi footerUbi footerUbi footerUbi";
 }
 
@@ -358,19 +160,18 @@ div.card {
 }
 #main .boda .boda__texto {
   text-align: center;
-  position: relative;
   background-color: rgb(88, 68, 116);
-  width: 450px;
+  padding: 20px;
 }
 #main .boda .boda__texto h2 {
-  color: white;
+  color: #fff;
   font-family: Bebas Neue;
   font-size: 56px;
   padding: 20px;
 }
 #main .boda .boda__texto p {
   color: white;
-  font-family: Arimo;
+  font-family: Montserrat;
   font-size: 28px;
 }
 #main .boda .boda__texto .boda__boton {
@@ -398,17 +199,17 @@ div.card {
 #main .cumple .cumple__texto {
   text-align: center;
   background-color: rgb(88, 68, 116);
-  width: 450px;
+  padding: 20px;
 }
 #main .cumple .cumple__texto h3 {
-  color: white;
+  color: #fff;
   font-family: Bebas Neue;
   font-size: 56px;
   padding: 20px;
 }
 #main .cumple .cumple__texto p {
   color: white;
-  font-family: Arimo;
+  font-family: Montserrat;
   font-size: 28px;
 }
 #main .cumple .cumple__texto .cumple__boton {
@@ -437,17 +238,17 @@ div.card {
   text-align: center;
   position: relative;
   background-color: rgb(88, 68, 116);
-  width: 450px;
+  padding: 20px;
 }
 #main .quince .quince__texto h4 {
-  color: white;
+  color: #fff;
   font-family: Bebas Neue;
   font-size: 56px;
   padding: 20px;
 }
 #main .quince .quince__texto p {
   color: white;
-  font-family: Arimo;
+  font-family: Montserrat;
   font-size: 28px;
 }
 #main .quince .quince__texto .quince__boton {
@@ -546,6 +347,177 @@ div.card {
 
 #footerQuin {
   grid-area: footerQuin;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  /*Hoja Index*/
+  .fondo__logo {
+    display: none;
+  }
+  div .boda_texto {
+    margin-left: 10px;
+  }
+  /*Hoja de Contacto*/
+  .bodyContacto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 430px auto auto;
+  }
+  .mailTelefono {
+    width: 278px;
+  }
+  /*Hoja de Ubicacion*/
+  #mainUbi {
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  #mainUbi .card .pUbi {
+    padding: 10px;
+  }
+}
+@media (max-width: 620px) {
+  /*Hoja Index*/
+  .redes {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar img {
+    margin-right: 60px;
+  }
+  .main img {
+    width: 560px;
+    height: 392px;
+  }
+  /*Hoja Contacto*/
+  #formulario #imagenCon {
+    margin-left: 120px;
+  }
+  #formulario p {
+    text-align: center;
+  }
+  #inputText.card-body {
+    margin: 0px;
+  }
+  .bodyContacto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 350px auto auto;
+  }
+}
+@media (max-width: 576px) {
+  /*Hoja Index*/
+  .redes {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar img {
+    margin-right: 60px;
+  }
+  .cumple__imagen {
+    width: 522px;
+    height: 392px;
+  }
+  .boda__imagen {
+    width: 522px;
+    height: 392px;
+  }
+  /*Hoja de Contacto*/
+  .formulario {
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 30px;
+  }
+  .bodyContacto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 370px auto auto;
+  }
+}
+@media (max-width: 480px) {
+  /*Hoja Index*/
+  .logo img {
+    margin: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .main img {
+    margin: 0;
+  }
+  .boda__texto {
+    margin-right: 15px;
+  }
+  .cumple__texto {
+    margin-right: 15px;
+  }
+  .quince__texto {
+    margin-right: 15px;
+  }
+  /*Hoja de contacto*/
+  .formulario {
+    padding-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  #bodyContacto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 300px auto auto;
+  }
+}
+@media (max-width: 320px) {
+  /*Hoja Index*/
+  .logo img {
+    display: none;
+  }
+  .navbar {
+    height: 50px;
+    font-size: 12px;
+  }
+  .boda__texto {
+    margin-right: 50px;
+  }
+  .cumple__texto {
+    margin-right: 50px;
+  }
+  .quince__texto {
+    margin-right: 50px;
+  }
+  /*Hoja de Contacto*/
+  #bodyContacto #formulario #imagenCon {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 10px 75px;
+  }
+  #bodyContacto #formulario .pCon {
+    text-align: center;
+    margin: 10px 0px;
+  }
+  #bodyContacto #formulario .mailTelefono {
+    margin-left: 10px;
+  }
+  #inputText.card-body {
+    margin: 0px;
+  }
+}
+/*Hoja de Ubicacion*/
+#mainUbi {
+  margin-right: 10px;
+  margin-left: 0px;
+}
+#mainUbi .card {
+  margin-right: 40px;
 }
 
 * {

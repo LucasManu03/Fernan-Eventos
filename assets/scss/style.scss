@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
-@import "media";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import "ubicacion";
 @import "contacto";
 @import "inicio";
-@import "casamiento";
+@import "casamientos";
 @import "cumple";
 @import "quince";
+@import "media";
+
 *{
     margin: 0;
     padding: 0;
@@ -20,9 +22,4 @@ $estiloTexto:(
     font: Arimo,
     fondo: rgb(88, 68, 116),
 );
-@mixin titulo ($color,$fuente,$tamano,$padding){
-    color: $color;
-    font-family: $fuente;
-    font-size: $tamano;
-    padding: $padding;
-}
+

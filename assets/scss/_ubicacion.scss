@@ -2,7 +2,7 @@
     background-color:rgba(222, 202, 191, 0.7);
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto 600px auto auto;
+    grid-template-rows: auto 400px auto auto;
     grid-template-areas: "navbarUbi navbarUbi navbarUbi navbarUbi"
                         "headerUbi headerUbi headerUbi headerUbi"
                          "mainUbi mainUbi mainUbi mainUbi"
