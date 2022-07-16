@@ -116,7 +116,7 @@ div.card {
   background-color: rgba(222, 202, 191, 0.7);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 600px auto auto;
+  grid-template-rows: auto 600px auto 100px;
   grid-template-areas: "navbar navbar navbar navbar" "header header header header" "main main main main" "footer footer footer footer";
 }
 
@@ -139,15 +139,43 @@ div.card {
 #footer {
   grid-area: footer;
   display: flex;
-  align-items: flex-end;
-  justify-content: end;
+  justify-content: space-around;
+  align-items: center;
 }
 #footer .copy {
   font-size: 15px;
+  font-family: Arimo;
+  text-align: center;
+}
+#footer .redes {
   display: flex;
-  align-items: flex-end;
-  align-content: flex-end;
-  justify-content: end;
+}
+#footer .redes .twitter {
+  margin-right: 25px;
+}
+#footer .redes .twitter img:hover {
+  opacity: 0;
+}
+#footer .redes .twitter:hover {
+  background-image: url(../img/logoTwitterColor.png);
+}
+#footer .redes .insta {
+  margin-right: 25px;
+}
+#footer .redes .insta img:hover {
+  opacity: 0;
+}
+#footer .redes .insta:hover {
+  background-image: url(../img/logoInstaColor.png);
+}
+#footer .redes .facebook img:hover {
+  opacity: 0;
+}
+#footer .redes .facebook:hover {
+  background-image: url(../img/logoFacebookColor.png);
+}
+#footer .logoFooter {
+  transform: scale(0.3);
 }
 
 #main {
@@ -160,7 +188,8 @@ div.card {
 }
 #main .boda .boda__texto {
   text-align: center;
-  background-color: rgb(88, 68, 116);
+  background: rgb(88, 68, 166);
+  background: linear-gradient(90deg, rgb(88, 68, 166) 0%, rgb(154, 114, 210) 98%, rgb(154, 114, 210) 100%);
   padding: 20px;
 }
 #main .boda .boda__texto h2 {
@@ -193,12 +222,13 @@ div.card {
 #main .cumple {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(88, 68, 116);
+  background-color: rgb(154, 114, 210);
   margin-top: 35px;
 }
 #main .cumple .cumple__texto {
   text-align: center;
-  background-color: rgb(88, 68, 116);
+  background: rgb(154, 114, 210);
+  background: linear-gradient(90deg, rgb(154, 114, 210) 0%, rgb(154, 114, 210) 2%, rgb(88, 68, 166) 100%);
   padding: 20px;
 }
 #main .cumple .cumple__texto h3 {
@@ -231,14 +261,16 @@ div.card {
 #main .quince {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(88, 68, 116);
+  background-color: rgb(154, 114, 210);
   margin-top: 35px;
 }
 #main .quince .quince__texto {
   text-align: center;
   position: relative;
-  background-color: rgb(88, 68, 116);
+  background: rgb(88, 68, 166);
+  background: linear-gradient(90deg, rgb(88, 68, 166) 0%, rgb(154, 114, 210) 98%, rgb(154, 114, 210) 100%);
   padding: 20px;
+  padding-right: 0;
 }
 #main .quince .quince__texto h4 {
   color: #fff;
