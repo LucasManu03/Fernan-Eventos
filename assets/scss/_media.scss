@@ -1,8 +1,6 @@
 /*Responsive*/
 @media(max-width:1024px){
-    #navbar{
-        max-width: 1024px;
-    }
+    
     .boda{
         img{
             max-width: 550px;
@@ -64,6 +62,7 @@
         }
 
     }
+    
 
 /*Hoja de Contacto*/
 .bodyContacto {
@@ -79,23 +78,8 @@
         font-size: 30px;
         
     }
-
-
-
 /*Hoja de Ubicacion*/
-#mainUbi{
-
-    display:flex ;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    .cardUbi{
-        .pUbi{
-            padding: 10px;
-        }
-    }
-
-}
+   
 }
 @media(max-width:620px){
     /*Hoja Index*/
@@ -132,6 +116,11 @@
         }
     }
 /*Hoja Contacto*/
+#footer{
+    .logoFooter{
+        display: none;
+    }
+}
 #formulario{
     #imagenCon{
         margin-left: 120px;
@@ -181,13 +170,13 @@
         max-width: 100%;
     }
     #footer{
-        .logoFooter{
-            display: none;
-        }
+        flex-direction: column;
+        align-items: center;
         .copy{
             p{
                 font-size: 12px;
             }
+        
         }
         /*Hoja de contacto*/
         #inputText{
@@ -239,19 +228,6 @@
     
 
 #inputText.card-body{
-    margin: 0px;
-}
-#footer{
-    .copy{
-        p{
-            font-size: 10px;
-            margin: 0px;
-        }
-    }
-}
-
-/*Hoja de Ubicacion*/
-.card{
     margin: 0px;
 }
 }

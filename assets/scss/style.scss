@@ -24,7 +24,6 @@ $estiloTexto:(
     fondo: rgb(88, 68, 116),
 );
 #navbar{
-    grid-area: navbar;
     .dropdown-menu{
         background: rgb(255,255,255); 
         background: linear-gradient(90deg, rgba(222, 202, 191,0.8) 0%, rgba(154,114,210,0.8) 31%, rgba(88,68,166,0.8) 80%);
@@ -40,7 +39,6 @@ $estiloTexto:(
         outline: none;
         box-shadow: none;
 }
-    
     .navbar-brand{
         &:hover{
             transition: 1s;
@@ -61,9 +59,7 @@ $estiloTexto:(
 #footer {
     grid-area: footer;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    
     .copy {
         font-size: 15px;
         font-family: Arimo; 
@@ -71,8 +67,8 @@ $estiloTexto:(
     }
     .redes{
         display: flex;
+        justify-content: center;
         .twitter{
-            margin-right: 25px;
             img{
                 &:hover{
                     opacity: 0;
@@ -84,7 +80,6 @@ $estiloTexto:(
             }
         }
         .insta{
-            margin-right: 25px;
             img{
                 &:hover{
                     opacity: 0;

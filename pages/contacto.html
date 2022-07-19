@@ -49,70 +49,50 @@
     </nav>
   </header>
   <main class="row justify-content-center" id="mainCon">
-    <div class="card" style="max-width: 90%;">
-      
-        <div class="col-md-6">
-          <div class="card-body" id="inputText">
-            <form action="">
+    <div class="content container m-xl-0">
+      <div class="contact-wrapper animated bounceInUp row">
+          <div class="contact-form col-xl-7 col-lg-7">
+              <h3 class="tituloCon">CONTACTANOS</h3>
               <div>
-                <div class="form-floating mb-3">
-                <input class="form-control" type="text" id="floatingName" required>
-                <label for="floatingInput">Nombre/s</label>
-                </div>
-                <div class="form-floating">
-                <input type="text" class="form-control" id="floatinLastName" required>
-                <label for="floatingInput">Apellido/s</label>
-                </div>
+                <form class="datos col-12 col-md-12 " action="">
+                    <p>
+                        <label >Nombre/s</label>
+                        <input type="text" name="nombre" required>
+                    </p>
+                    <p>
+                        <label>Apellido/s</label>
+                        <input type="text" name="apellido" required>
+                    </p>
+                    <p>
+                        <label>Dirección de Email</label>
+                        <input type="email" name="email" required>
+                    </p>
+                    <p>
+                        <label>Numero de contacto</label>
+                        <input type="tel" name="numero" required>
+                    </p>
+                    <p class="block">
+                      <label>Razón del contacto</label> 
+                        <textarea name="message" rows="3"></textarea required>
+                    </p>
+                    <p class="block">
+                        <button> Enviar</button>
+                    </p>
+                </form>
               </div>
-              <div class=" mt-4 mb-4" id="form">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Hombre
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Mujer
-                  </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      Otro
-                    </label>
-                </div>
-              </div>
-              <div class="razon mb-3">
-                <select class="form-select" aria-label="Default select example" required>
-                  <option selected>Razon del contacto</option>
-                  <option value="ca">Casamiento</option>
-                  <option value="c">Cumpleaños</option>
-                  <option value="f">Fiesta de 15</option>
-                  <option value="o">Otro</option>
-                </select>
-              </div>
-              <div class="form-floating mb-3">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
-                <label for="floatingTextarea2">Comentario</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-              <button type="reset" class="btn btn-danger">Reiniciar</button>
-          </form>
           </div>
-        </div>
-        <div class="contactoLateral row g-">
-          <div class="col-md-8" id="formulario">
-            <img src="../assets/img/logomioFondo.jpg" id="imagenCon" alt="">
-            <p class="pCon">Tambien puede comunicarse con nosotros via:</p>
-            <div class="mailTelefono">
-              <h5><span class="con material-symbols-outlined">phone_iphone</span> +54 11 1234-5678</h5>
-              <h5><span class="con material-symbols-outlined">mail</span>fernaneventos@gmail.com</h5>
-            </div>
+          <div class="contact-info col-xl-5 col-lg-5 p-5 p-sm-5">
+              <h4>También puede comunicarse con nosotros mediante:</h4>
+              <ul>
+                  <li><span class="con material-symbols-outlined">phone_iphone</span>+54 11 1234-5678</li>
+                  <li><span class="con material-symbols-outlined">mail</span> fernaneventos@gmail.com</li>
+                  <a href="./ubicacion.html"><li>Nuestro local</li></a>
+              </ul>
+              <p>Fernan Eventos © 2022-2022</p>
           </div>
-          </div>
-    </div>
+      </div>
+
+  </div>
   </main>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
@@ -120,17 +100,17 @@
     </script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<footer id="footer">
-  <div class="copy">
-    <p>Fernan Eventos © 2022-2022</p>
-    <p>Todos los derechos reservados</p>
-  </div>
-    <div class="logoFooter"><a href="../index.html"><img src="../assets/img/logomio.png" alt=""></a></div>
-    <div class="redes">
-      <div class="twitter"><a href="https://twitter.com/?lang=es" target="_blank"><img src="../assets/img/logoTwiterByN.png" alt=""></a></div>
-      <div class="insta"><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logoInstaByN.png" alt=""></a></div>
-      <div class="facebook"><a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logoFacebookByN.png" alt=""></a></div>
+<footer class="container-fluid" id="footer">
+    <div class="copy col-3 col-sm-4">
+      <p>Fernan Eventos © 2022-2022</p>
+      <p>Todos los derechos reservados</p>
     </div>
+      <div class="logoFooter col-3 col-sm-4"><a href="../index.html"><img src="../assets/img/logomio.png" alt=""></a></div>
+      <div class="redes col-6 col-sm-4 ms-sm-0">
+        <div class="twitter m-lg-3"><a href="https://twitter.com/?lang=es" target="_blank"><img src="../assets/img/logoTwiterByN.png" alt=""></a></div>
+        <div class="insta m-lg-3"><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logoInstaByN.png" alt=""></a></div>
+        <div class="facebook m-lg-3"><a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logoFacebookByN.png" alt=""></a></div>
+      </div>
 </footer>
 </body>
 </html>

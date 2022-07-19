@@ -28,11 +28,10 @@
     position: absolute;
     top: 30%;
     text-align: start;
-    margin-left: 100px;
-    padding: 20px 50px;
     width: auto;
     border-radius: 15px;
-    background-color: rgba(88, 68, 116, 0.7);
+    background:rgb(154,114,210);
+    background: linear-gradient(90deg, rgba(154,114,210,0.7) 0%, rgba(154,114,210,0.7) 2%, rgba(88,68,166,0.7) 100%);
     .tituloEven{
         font-size: 45px;
         font-family: Anton;
@@ -71,7 +70,7 @@
     .parraEven{
         padding: 20px;
         font-family: Arimo;
-        font-size: 20px;
+        font-size: 25px;
         color: #fff;
         text-align: center;
     }
@@ -81,9 +80,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 550px;
+    background-image: url(../img/people-g8816df98f_1920\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     .imagenTexto{
         text-align: center;
-        margin: 20px;
+        color: #fff;
         .tituloImagen{
             font-family: Bebas Neue;
             font-size: 50px;
@@ -94,11 +98,7 @@
             font-size: 20px;
             padding: 15px;
         }
-        .imagenRec{
-            img{
-                padding: 20px;
-            }
-        }
+        
     }
 }
 .rectanguloImagenDos{
@@ -122,10 +122,16 @@
             font-size: 20px;
             padding: 15px;
             color: #fff;
+            list-style: none;
+            li{
+                padding-top: 20px;
+                text-decoration-line: underline;
+            }
         }
         .imagenDosRecDos{
             img{
-                padding: 20px;
+                max-width: 100%;
+                height: auto;
             }
         }
     }

@@ -23,11 +23,15 @@
 #footer{
     grid-area: footer;
 }
-.card{
+
+.cardUbi{
     display: flex;
     align-items: center;
-    border: solid transparent;
+    border: solid 0px transparent;
     border-radius: 0px;
+    flex-direction: column;
+    background: rgb(130,115,151);
+    background: linear-gradient(331deg, rgba(130,115,151,1) 0%, rgba(88,68,166,1) 23%);
     .ubi{
     font-size: 140px;
     }
@@ -37,13 +41,13 @@
         font-size: 38px;
         text-decoration: underline;
         color: rgb(224, 224, 224);
+        text-align: center;
     }
     span{
         color: #fff;
     }
     .pUbi{
         font-size: 20px;
-        padding: 0px 160px;
         color: rgb(224, 224, 224);
         text-align: center;     
     }
