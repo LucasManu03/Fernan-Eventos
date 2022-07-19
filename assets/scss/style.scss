@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import "ubicacion";
 @import "contacto";
 @import "inicio";
@@ -22,4 +23,98 @@ $estiloTexto:(
     font: Arimo,
     fondo: rgb(88, 68, 116),
 );
-
+#navbar{
+    grid-area: navbar;
+    .dropdown-menu{
+        background: rgb(255,255,255); 
+        background: linear-gradient(90deg, rgba(222, 202, 191,0.8) 0%, rgba(154,114,210,0.8) 31%, rgba(88,68,166,0.8) 80%);
+        border: none;
+    }
+    .navbar-toggler{
+        border-color: rgba(88,68,166,0); 
+          
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+}
+    
+    .navbar-brand{
+        &:hover{
+            transition: 1s;
+            transform: scale(1.2);
+        }
+    }
+    ul{
+        li{
+            a{
+                &:hover{
+                    background-color: transparent;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+#footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    .copy {
+        font-size: 15px;
+        font-family: Arimo; 
+        text-align: center;
+    }
+    .redes{
+        display: flex;
+        .twitter{
+            margin-right: 25px;
+            img{
+                &:hover{
+                    opacity: 0;
+                    
+                }
+            }
+            &:hover{
+                background-image: url(../img/logoTwitterColor.png);
+            }
+        }
+        .insta{
+            margin-right: 25px;
+            img{
+                &:hover{
+                    opacity: 0;
+                    
+                }
+            }
+            &:hover{
+                background-image: url(../img/logoInstaColor.png);
+            }
+        }
+        .facebook{
+            img{
+                &:hover{
+                    opacity: 0;
+                    
+                }
+            }
+            &:hover{
+                background-image: url(../img/logoFacebookColor.png);
+            }
+        }
+    }
+    .logoFooter{
+        transform: scale(0.3);
+        &:hover{
+            transition: 0.5s;
+            transform: scale(32%);
+        }
+    }
+}
+#header{
+    margin: 0px 0px 35px 0px;
+}

@@ -1,31 +1,95 @@
 /*Responsive*/
+@media(max-width:1024px){
+    #navbar{
+        max-width: 1024px;
+    }
+    .boda{
+        img{
+            max-width: 550px;
+            height: auto;
+        }
+    }
+    .cumple{
+        img{
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+    .quince{
+        img{
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+}
 @media(max-width:768px){
     /*Hoja Index*/
+    #navbar{
+        max-width: 768px;
+    }
+    #header{
+        max-width: 768;
+    }
+    #body {
+        display: grid;
+        grid-template-rows: auto 400px auto 100px;
+    }
+    main{
+        img{
+            max-width: auto;
+        }
+        .boda{
+            position: relative;
+            flex-direction: column;
+            img{
+                max-width: 100%;
+                height: 100%;
+            }           
+        }
+        .cumple{
+            position: relative ;
+            flex-direction: column-reverse;
+            img{
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+        .quince{
+            position: relative;
+            flex-direction: column;
+            img{
+                max-width: 100%;
+                height: 100%;
+            }
+        }
 
-.fondo__logo {
-    display: none
-}
-div .boda_texto{
-    margin-left: 10px;
-}
+    }
+
 /*Hoja de Contacto*/
 .bodyContacto {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto 430px auto auto;
 }
-.mailTelefono{
-    width: 278px;
-    
-}
+.contactoLateral{
+    justify-content: center;
+    margin-right: 20px;
+    }
+    .mailTelefono{
+        font-size: 30px;
+        
+    }
+
+
+
 /*Hoja de Ubicacion*/
 #mainUbi{
-    margin-right: 80px;
+
     display:flex ;
     justify-content: center;
     justify-items: center;
     text-align: center;
-    .card{
+    .cardUbi{
         .pUbi{
             padding: 10px;
         }
@@ -35,20 +99,38 @@ div .boda_texto{
 }
 @media(max-width:620px){
     /*Hoja Index*/
-.redes{
-    display: none;
-}
-.navbar{
-    display: flex;
-    justify-content: center;
-}
-.navbar img {
-    margin-right: 60px;
-}
-.main img {
-    width: 560px;
-    height: 392px;
-}
+    #navbar{
+        max-width: 620px;
+    }
+    main{
+        .boda{
+            position: relative;
+            flex-direction: column;
+            
+        }
+        .cumple{
+            position: relative ;
+            flex-direction: column-reverse;
+        }
+        .quince{
+            position: relative;
+            flex-direction: column;
+        }
+
+    }
+    #footer{
+        .copy{
+            p{
+                font-size: 10px;
+            }
+        }
+        .redes{
+            img{
+                transform: scale(0.8);
+                
+            }
+        }
+    }
 /*Hoja Contacto*/
 #formulario{
     #imagenCon{
@@ -71,24 +153,13 @@ div .boda_texto{
 }
 @media(max-width:576px){
     /*Hoja Index*/
-.redes {
-    display: none;
-}
-.navbar{
-    display: flex;
-    justify-content: center;
-}
-.navbar img {
-    margin-right: 60px;
-}
-.cumple__imagen{
-    width: 522px;
-    height: 392px;
-}
-.boda__imagen{
-    width: 522px;
-    height: 392px;
-}
+    #navbar{
+        max-width: 576px;
+    }
+    #header{
+        max-width: 576px;
+         
+    }
 /*Hoja de Contacto*/
 .formulario{
     margin-left: 70px;
@@ -103,56 +174,49 @@ div .boda_texto{
 }
 @media(max-width:480px){
     /*Hoja Index*/
-.logo img{
-    margin: 0;
-}
-.navbar {
-    display: flex;
-    justify-content: center;
-}
-.main img {
-    margin: 0;
-}
-.boda__texto{
-    margin-right: 15px;
-}
-.cumple__texto{
-    margin-right: 15px;
-}
-.quince__texto{
-    margin-right: 15px;
-}
-/*Hoja de contacto*/
-.formulario{
-    padding-top: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-#bodyContacto {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto 300px auto auto;
+    #navbar{
+        max-width: 480px;
+    }
+    #header{
+        max-width: 100%;
+    }
+    #footer{
+        .logoFooter{
+            display: none;
+        }
+        .copy{
+            p{
+                font-size: 12px;
+            }
+        }
+        /*Hoja de contacto*/
+        #inputText{
+            margin-right: 0px;
+        }
+        #bodyContacto {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto 300px auto auto;
+        }
+
 }
 }
 @media (max-width:320px){
 /*Hoja Index*/
-.logo img {
-    display: none;
-}
-.navbar{
-    height: 50px;
-    font-size: 12px;
-}
+    #navbar{
+        max-width: 320px;
+    }
+    #header{
+        max-width: 320p;
+    }
+    .quince{
+        .quince__texto{
+            p{
+                padding-right: 20px;
+            }
+        }
+    }
 
-.boda__texto{
-    margin-right: 50px;
-}
-.cumple__texto{
-    margin-right: 50px;
-}
-.quince__texto{
-    margin-right: 50px;
-}
 /*Hoja de Contacto*/
 #bodyContacto {
        
@@ -177,13 +241,18 @@ div .boda_texto{
 #inputText.card-body{
     margin: 0px;
 }
-}
-/*Hoja de Ubicacion*/
-#mainUbi{
-    margin-right: 10px;
-    margin-left: 0px;
-
-.card{
-    margin-right: 40px;
+#footer{
+    .copy{
+        p{
+            font-size: 10px;
+            margin: 0px;
+        }
     }
 }
+
+/*Hoja de Ubicacion*/
+.card{
+    margin: 0px;
+}
+}
+

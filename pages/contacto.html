@@ -16,11 +16,11 @@
 </head>
 <body class="container-fluid" id="bodyContacto">
   <header class="row" id="headerCon">
-    <nav class="navbar navbar-expand-lg fixed-top row col-12 m-0" id="navbarCon" style="background-color:rgba(136, 116, 148,0.8)">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar" style="background: rgb(255,255,255); background: linear-gradient(90deg, rgba(222, 202, 191,0.8) 0%, rgba(154,114,210,0.8) 31%, rgba(88,68,166,0.8) 80%);">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html"><img src="/assets/img/logoNavbar.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon navbar-dark"></span>
         </button>
       <div class="collapse navbar-collapse justify-content-around " id="navbarNavDropdown">
         <ul class="navbar-nav ">
@@ -50,16 +50,8 @@
   </header>
   <main class="row justify-content-center" id="mainCon">
     <div class="card" style="max-width: 90%;">
-      <div class="contactoLateral row g-0">
-        <div class="col-md-4" id="formulario">
-          <img src="../assets/img/logomioFondo.jpg" id="imagenCon" alt="">
-          <p class="pCon mt-5 mb-5">Tambien puede comunicarse con nosotros via:</p>
-          <div class="mailTelefono">
-            <h5><span class="con material-symbols-outlined">phone_iphone</span> +54 11 1234-5678</h5>
-            <h5><span class="con material-symbols-outlined">mail</span>fernaneventos@gmail.com</h5>
-          </div>
-        </div>
-        <div class="col-md-8">
+      
+        <div class="col-md-6">
           <div class="card-body" id="inputText">
             <form action="">
               <div>
@@ -72,8 +64,8 @@
                 <label for="floatingInput">Apellido/s</label>
                 </div>
               </div>
-              <div class=" mt-4 mb-4">
-                <div class="form-check" id="form">
+              <div class=" mt-4 mb-4" id="form">
+                <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                   <label class="form-check-label" for="flexRadioDefault1">
                     Hombre
@@ -110,7 +102,16 @@
           </form>
           </div>
         </div>
-      </div>
+        <div class="contactoLateral row g-">
+          <div class="col-md-8" id="formulario">
+            <img src="../assets/img/logomioFondo.jpg" id="imagenCon" alt="">
+            <p class="pCon">Tambien puede comunicarse con nosotros via:</p>
+            <div class="mailTelefono">
+              <h5><span class="con material-symbols-outlined">phone_iphone</span> +54 11 1234-5678</h5>
+              <h5><span class="con material-symbols-outlined">mail</span>fernaneventos@gmail.com</h5>
+            </div>
+          </div>
+          </div>
     </div>
   </main>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -119,6 +120,17 @@
     </script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<footer id="footerCon"></footer>
+<footer id="footer">
+  <div class="copy">
+    <p>Fernan Eventos © 2022-2022</p>
+    <p>Todos los derechos reservados</p>
+  </div>
+    <div class="logoFooter"><a href="../index.html"><img src="../assets/img/logomio.png" alt=""></a></div>
+    <div class="redes">
+      <div class="twitter"><a href="https://twitter.com/?lang=es" target="_blank"><img src="../assets/img/logoTwiterByN.png" alt=""></a></div>
+      <div class="insta"><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logoInstaByN.png" alt=""></a></div>
+      <div class="facebook"><a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logoFacebookByN.png" alt=""></a></div>
+    </div>
+</footer>
 </body>
 </html>

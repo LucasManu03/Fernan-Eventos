@@ -8,6 +8,7 @@
                          "main main main main"
                          "footer footer footer footer";
 }
+
 #header{
     grid-area: header;
     background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
@@ -24,59 +25,7 @@
     }
 }
 
-#footer {
-    grid-area: footer;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-    .copy {
-        font-size: 15px;
-        font-family: Arimo; 
-        text-align: center;
-    }
-    .redes{
-        display: flex;
-        .twitter{
-            margin-right: 25px;
-            img{
-                &:hover{
-                    opacity: 0;
-                    
-                }
-            }
-            &:hover{
-                background-image: url(../img/logoTwitterColor.png);
-            }
-        }
-        .insta{
-            margin-right: 25px;
-            img{
-                &:hover{
-                    opacity: 0;
-                    
-                }
-            }
-            &:hover{
-                background-image: url(../img/logoInstaColor.png);
-            }
-        }
-        .facebook{
-            img{
-                &:hover{
-                    opacity: 0;
-                    
-                }
-            }
-            &:hover{
-                background-image: url(../img/logoFacebookColor.png);
-            }
-        }
-    }
-    .logoFooter{
-        transform: scale(0.3);
-    }
-}
+
 #main {
     grid-area: main;
     .boda{

@@ -2,14 +2,14 @@
     background-color:rgba(222, 202, 191, 0.7);
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto 400px auto auto;
-    grid-template-areas: "navbarUbi navbarUbi navbarUbi navbarUbi"
+    grid-template-rows: auto 400px auto 100px;
+    grid-template-areas: "navbar navbar navbar navbar"
                         "headerUbi headerUbi headerUbi headerUbi"
                          "mainUbi mainUbi mainUbi mainUbi"
-                         "footerUbi footerUbi footerUbi footerUbi";
+                         "footer footer footer footer";
 }
-#navbarUbi{
-    grid-area: navbarUbi
+#navbar{
+    grid-area: navbar;
 }
 #headerUbi{
     grid-area: headerUbi;
@@ -20,11 +20,8 @@
 #mainUbi{
     grid-area: mainUbi;
 }
-#footerUbi{
-    grid-area: footerUbi;
-}
-#textoMapa i {
-    font-size: 100px;
+#footer{
+    grid-area: footer;
 }
 .card{
     display: flex;
@@ -41,7 +38,11 @@
         text-decoration: underline;
         color: rgb(224, 224, 224);
     }
+    span{
+        color: #fff;
+    }
     .pUbi{
+        font-size: 20px;
         padding: 0px 160px;
         color: rgb(224, 224, 224);
         text-align: center;     

@@ -2,11 +2,11 @@
     background-color:rgba(222, 202, 191, 0.7);
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto 600px auto auto;
+    grid-template-rows: auto 600px auto 100px;
     grid-template-areas: "navbar navbar navbar navbar"
                         "headerCon headerCon headerCon headerCon"
                          "mainCon mainCon mainCon mainCon"
-                         "footerCon footerCon footerCon footerCon";
+                         "footer footer footer footer";
 }
 
 #headerCon{
@@ -15,43 +15,58 @@
     background-size: cover;
     background-attachment: fixed;
 }
-#navbarCon{
+#navbar{
     grid-area: navbar;
 }
 #mainCon{
     grid-area: mainCon;
 }
-#footerCon{
-    grid-area: footerCon;
+#footer{
+    grid-area: footer;
 }
 #bodyContacto {
         background-color:rgba(222, 202, 191, 0.7);
 }
-div.card{
-    background-color: #827397;
-}
-#inputText{
-    margin-left: 200px;
-    font-family: Arimo;
-    font-size: 18px;
-}
-.contactoLateral{
-    .pCon{
+.card{
+    border:solid 0px;
+    background: rgb(130,115,151);
+    background: linear-gradient(331deg, rgba(130,115,151,1) 0%, rgba(88,68,166,1) 23%);
+    display: flex;
+    flex-direction: column;
+    #inputText{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: rgba(222, 202, 191, 0.7);
         font-family: Arimo;
-        color: #fff;
-        font-size: 30px;
-        text-decoration: underline;
+        font-size: 18px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.1);
+        #form{
+            label{
+                color: #fff;
+            }
+        }
+        
     }
-    #imagenCon{
+    .contactoLateral{
+        margin-left: 20px;
+        .pCon{
+            font-family: Bebas Neue;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            
+        }
+        #imagenCon{
+            border-radius: 60px;
+            margin-bottom: 30px;
+        }
+        .mailTelefono{
+            margin: 10px;
+            color: #fff;
+            font-family: Arimo;
+        }
+    }
     
-        border-radius: 60px;
-        margin-top: 40px;
-        justify-content: center;
-    }
-    .mailTelefono{
-        color: #fff;
-        font-family: Arimo;
-        
-        
-    }
 }
+

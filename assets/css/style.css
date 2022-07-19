@@ -2,16 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 #bodyUbicacion {
   background-color: rgba(222, 202, 191, 0.7);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 400px auto auto;
-  grid-template-areas: "navbarUbi navbarUbi navbarUbi navbarUbi" "headerUbi headerUbi headerUbi headerUbi" "mainUbi mainUbi mainUbi mainUbi" "footerUbi footerUbi footerUbi footerUbi";
+  grid-template-rows: auto 400px auto 100px;
+  grid-template-areas: "navbar navbar navbar navbar" "headerUbi headerUbi headerUbi headerUbi" "mainUbi mainUbi mainUbi mainUbi" "footer footer footer footer";
 }
 
-#navbarUbi {
-  grid-area: navbarUbi;
+#navbar {
+  grid-area: navbar;
 }
 
 #headerUbi {
@@ -25,12 +26,8 @@
   grid-area: mainUbi;
 }
 
-#footerUbi {
-  grid-area: footerUbi;
-}
-
-#textoMapa i {
-  font-size: 100px;
+#footer {
+  grid-area: footer;
 }
 
 .card {
@@ -49,7 +46,11 @@
   text-decoration: underline;
   color: rgb(224, 224, 224);
 }
+.card span {
+  color: #fff;
+}
 .card .pUbi {
+  font-size: 20px;
   padding: 0px 160px;
   color: rgb(224, 224, 224);
   text-align: center;
@@ -59,8 +60,8 @@
   background-color: rgba(222, 202, 191, 0.7);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 600px auto auto;
-  grid-template-areas: "navbar navbar navbar navbar" "headerCon headerCon headerCon headerCon" "mainCon mainCon mainCon mainCon" "footerCon footerCon footerCon footerCon";
+  grid-template-rows: auto 600px auto 100px;
+  grid-template-areas: "navbar navbar navbar navbar" "headerCon headerCon headerCon headerCon" "mainCon mainCon mainCon mainCon" "footer footer footer footer";
 }
 
 #headerCon {
@@ -70,7 +71,7 @@
   background-attachment: fixed;
 }
 
-#navbarCon {
+#navbar {
   grid-area: navbar;
 }
 
@@ -78,36 +79,48 @@
   grid-area: mainCon;
 }
 
-#footerCon {
-  grid-area: footerCon;
+#footer {
+  grid-area: footer;
 }
 
 #bodyContacto {
   background-color: rgba(222, 202, 191, 0.7);
 }
 
-div.card {
-  background-color: #827397;
+.card {
+  border: solid 0px;
+  background: rgb(130, 115, 151);
+  background: linear-gradient(331deg, rgb(130, 115, 151) 0%, rgb(88, 68, 166) 23%);
+  display: flex;
+  flex-direction: column;
 }
-
-#inputText {
-  margin-left: 200px;
+.card #inputText {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: rgba(222, 202, 191, 0.7);
   font-family: Arimo;
   font-size: 18px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.1);
 }
-
-.contactoLateral .pCon {
-  font-family: Arimo;
+.card #inputText #form label {
+  color: #fff;
+}
+.card .contactoLateral {
+  margin-left: 20px;
+}
+.card .contactoLateral .pCon {
+  font-family: Bebas Neue;
   color: #fff;
   font-size: 30px;
-  text-decoration: underline;
+  text-align: center;
 }
-.contactoLateral #imagenCon {
+.card .contactoLateral #imagenCon {
   border-radius: 60px;
-  margin-top: 40px;
-  justify-content: center;
+  margin-bottom: 30px;
 }
-.contactoLateral .mailTelefono {
+.card .contactoLateral .mailTelefono {
+  margin: 10px;
   color: #fff;
   font-family: Arimo;
 }
@@ -134,48 +147,6 @@ div.card {
   padding: 20px;
   background-color: rgba(222, 202, 191, 0.9);
   border-radius: 20px;
-}
-
-#footer {
-  grid-area: footer;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-#footer .copy {
-  font-size: 15px;
-  font-family: Arimo;
-  text-align: center;
-}
-#footer .redes {
-  display: flex;
-}
-#footer .redes .twitter {
-  margin-right: 25px;
-}
-#footer .redes .twitter img:hover {
-  opacity: 0;
-}
-#footer .redes .twitter:hover {
-  background-image: url(../img/logoTwitterColor.png);
-}
-#footer .redes .insta {
-  margin-right: 25px;
-}
-#footer .redes .insta img:hover {
-  opacity: 0;
-}
-#footer .redes .insta:hover {
-  background-image: url(../img/logoInstaColor.png);
-}
-#footer .redes .facebook img:hover {
-  opacity: 0;
-}
-#footer .redes .facebook:hover {
-  background-image: url(../img/logoFacebookColor.png);
-}
-#footer .logoFooter {
-  transform: scale(0.3);
 }
 
 #main {
@@ -304,12 +275,12 @@ div.card {
   background-color: rgba(222, 202, 191, 0.7);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 500px auto auto;
-  grid-template-areas: "navCas navCas navCas navCas" "headerCas headerCas headerCas headerCas" "mainCas mainCas mainCas mainCas" "footerCas footerCas footerCas footerCas";
+  grid-template-rows: auto 500px auto 100px;
+  grid-template-areas: "navbar navbar navbar navbar" "headerCas headerCas headerCas headerCas" "mainCas mainCas mainCas mainCas" "footer footer footer footer";
 }
 
-#navCas {
-  grid-area: navCas;
+#navbar {
+  grid-area: navbar;
 }
 
 #headerCas {
@@ -323,20 +294,127 @@ div.card {
   grid-area: mainCas;
 }
 
-#footerCas {
-  grid-area: footerCas;
+#footer {
+  grid-area: footer;
+}
+
+.cotiza {
+  display: block;
+  position: absolute;
+  top: 30%;
+  text-align: start;
+  margin-left: 100px;
+  padding: 20px 50px;
+  width: auto;
+  border-radius: 15px;
+  background-color: rgba(88, 68, 116, 0.7);
+}
+.cotiza .tituloEven {
+  font-size: 45px;
+  font-family: Anton;
+  color: #fff;
+}
+.cotiza .botonEven {
+  color: #fff;
+  white-space: nowrap;
+  border: solid 1px #fff;
+  font-size: 23px;
+  margin-top: 12px;
+  font-weight: lighter;
+  width: auto;
+  font-family: Bebas Neue;
+  background-color: transparent;
+  padding: 8px;
+}
+.cotiza .botonEven:hover {
+  background: #fff;
+  color: rgb(88, 68, 116);
+}
+
+.rectangulo1 {
+  margin-top: 30px;
+  background: rgb(154, 114, 210);
+  background: linear-gradient(90deg, rgb(154, 114, 210) 0%, rgb(154, 114, 210) 2%, rgb(88, 68, 166) 100%);
+  display: flex;
+  flex-direction: column;
+}
+.rectangulo1 .subtituloEven {
+  color: #fff;
+  font-family: Bebas Neue;
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
+}
+.rectangulo1 .parraEven {
+  padding: 20px;
+  font-family: Arimo;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.rectanguloImagen {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rectanguloImagen .imagenTexto {
+  text-align: center;
+  margin: 20px;
+}
+.rectanguloImagen .imagenTexto .tituloImagen {
+  font-family: Bebas Neue;
+  font-size: 50px;
+  padding: 15px;
+}
+.rectanguloImagen .imagenTexto .parrafoImagen {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding: 15px;
+}
+.rectanguloImagen .imagenTexto .imagenRec img {
+  padding: 20px;
+}
+
+.rectanguloImagenDos {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(154, 114, 210);
+  background: linear-gradient(90deg, rgb(154, 114, 210) 0%, rgb(154, 114, 210) 2%, rgb(88, 68, 166) 100%);
+}
+.rectanguloImagenDos .imagenTextoDos {
+  text-align: center;
+  margin: 20px;
+}
+.rectanguloImagenDos .imagenTextoDos .tituloImagenDos {
+  font-family: Bebas Neue;
+  font-size: 50px;
+  padding: 15px;
+  color: #fff;
+}
+.rectanguloImagenDos .imagenTextoDos .parrafoImagenDos {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding: 15px;
+  color: #fff;
+}
+.rectanguloImagenDos .imagenTextoDos .imagenDosRecDos img {
+  padding: 20px;
 }
 
 #bodyCump {
   background-color: rgba(222, 202, 191, 0.7);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 500px auto auto;
-  grid-template-areas: "navCump navCump navCump navCump" "headerCump headerCump headerCump headerCump" "mainCump mainCump mainCump mainCump" "footerCump footerCump footerCump footerCump";
+  grid-template-rows: auto 500px auto 100px;
+  grid-template-areas: "navbar navbar navbar navbar" "headerCump headerCump headerCump headerCump" "mainCump mainCump mainCump mainCump" "footer footer footer footer";
 }
 
-#navCump {
-  grid-area: navCump;
+#navbar {
+  grid-area: navbar;
 }
 
 #headerCump {
@@ -350,20 +428,20 @@ div.card {
   grid-area: mainCump;
 }
 
-#footerCump {
-  grid-area: footerCump;
+#footer {
+  grid-area: footer;
 }
 
 #bodyQuin {
   background-color: rgba(222, 202, 191, 0.7);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 500px auto auto;
-  grid-template-areas: "navQuin navQuin navQuin navQuin" "headerQuin headerQuin headerQuin headerQuin" "mainQuin mainQuin mainQuin mainQuin" "footerQuin footerQuin footerQuin footerQuin";
+  grid-template-rows: auto 500px auto 100px;
+  grid-template-areas: "navbar navbar navbar navbar" "headerQuin headerQuin headerQuin headerQuin" "mainQuin mainQuin mainQuin mainQuin" "footer footer footer footer";
 }
 
-#navQuin {
-  grid-area: navQuin;
+#navbar {
+  grid-area: navbar;
 }
 
 #headerQuin {
@@ -377,18 +455,66 @@ div.card {
   grid-area: mainQuin;
 }
 
-#footerQuin {
-  grid-area: footerQuin;
+#footer {
+  grid-area: footer;
 }
 
 /*Responsive*/
+@media (max-width: 1024px) {
+  #navbar {
+    max-width: 1024px;
+  }
+  .boda img {
+    max-width: 550px;
+    height: auto;
+  }
+  .cumple img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .quince img {
+    max-width: 100%;
+    height: 100%;
+  }
+}
 @media (max-width: 768px) {
   /*Hoja Index*/
-  .fondo__logo {
-    display: none;
+  #navbar {
+    max-width: 768px;
   }
-  div .boda_texto {
-    margin-left: 10px;
+  #header {
+    max-width: 768;
+  }
+  #body {
+    display: grid;
+    grid-template-rows: auto 400px auto 100px;
+  }
+  main img {
+    max-width: auto;
+  }
+  main .boda {
+    position: relative;
+    flex-direction: column;
+  }
+  main .boda img {
+    max-width: 100%;
+    height: 100%;
+  }
+  main .cumple {
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  main .cumple img {
+    max-width: 100%;
+    height: 100%;
+  }
+  main .quince {
+    position: relative;
+    flex-direction: column;
+  }
+  main .quince img {
+    max-width: 100%;
+    height: 100%;
   }
   /*Hoja de Contacto*/
   .bodyContacto {
@@ -396,36 +522,46 @@ div.card {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 430px auto auto;
   }
+  .contactoLateral {
+    justify-content: center;
+    margin-right: 20px;
+  }
   .mailTelefono {
-    width: 278px;
+    font-size: 30px;
   }
   /*Hoja de Ubicacion*/
   #mainUbi {
-    margin-right: 80px;
     display: flex;
     justify-content: center;
     justify-items: center;
     text-align: center;
   }
-  #mainUbi .card .pUbi {
+  #mainUbi .cardUbi .pUbi {
     padding: 10px;
   }
 }
 @media (max-width: 620px) {
   /*Hoja Index*/
-  .redes {
-    display: none;
+  #navbar {
+    max-width: 620px;
   }
-  .navbar {
-    display: flex;
-    justify-content: center;
+  main .boda {
+    position: relative;
+    flex-direction: column;
   }
-  .navbar img {
-    margin-right: 60px;
+  main .cumple {
+    position: relative;
+    flex-direction: column-reverse;
   }
-  .main img {
-    width: 560px;
-    height: 392px;
+  main .quince {
+    position: relative;
+    flex-direction: column;
+  }
+  #footer .copy p {
+    font-size: 10px;
+  }
+  #footer .redes img {
+    transform: scale(0.8);
   }
   /*Hoja Contacto*/
   #formulario #imagenCon {
@@ -445,23 +581,11 @@ div.card {
 }
 @media (max-width: 576px) {
   /*Hoja Index*/
-  .redes {
-    display: none;
+  #navbar {
+    max-width: 576px;
   }
-  .navbar {
-    display: flex;
-    justify-content: center;
-  }
-  .navbar img {
-    margin-right: 60px;
-  }
-  .cumple__imagen {
-    width: 522px;
-    height: 392px;
-  }
-  .boda__imagen {
-    width: 522px;
-    height: 392px;
+  #header {
+    max-width: 576px;
   }
   /*Hoja de Contacto*/
   .formulario {
@@ -477,32 +601,25 @@ div.card {
 }
 @media (max-width: 480px) {
   /*Hoja Index*/
-  .logo img {
-    margin: 0;
+  #navbar {
+    max-width: 480px;
   }
-  .navbar {
-    display: flex;
-    justify-content: center;
+  #header {
+    max-width: 100%;
   }
-  .main img {
-    margin: 0;
+  #footer {
+    /*Hoja de contacto*/
   }
-  .boda__texto {
-    margin-right: 15px;
+  #footer .logoFooter {
+    display: none;
   }
-  .cumple__texto {
-    margin-right: 15px;
+  #footer .copy p {
+    font-size: 12px;
   }
-  .quince__texto {
-    margin-right: 15px;
+  #footer #inputText {
+    margin-right: 0px;
   }
-  /*Hoja de contacto*/
-  .formulario {
-    padding-top: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  #bodyContacto {
+  #footer #bodyContacto {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 300px auto auto;
@@ -510,21 +627,14 @@ div.card {
 }
 @media (max-width: 320px) {
   /*Hoja Index*/
-  .logo img {
-    display: none;
+  #navbar {
+    max-width: 320px;
   }
-  .navbar {
-    height: 50px;
-    font-size: 12px;
+  #header {
+    max-width: 320p;
   }
-  .boda__texto {
-    margin-right: 50px;
-  }
-  .cumple__texto {
-    margin-right: 50px;
-  }
-  .quince__texto {
-    margin-right: 50px;
+  .quince .quince__texto p {
+    padding-right: 20px;
   }
   /*Hoja de Contacto*/
   #bodyContacto #formulario #imagenCon {
@@ -542,18 +652,93 @@ div.card {
   #inputText.card-body {
     margin: 0px;
   }
+  #footer .copy p {
+    font-size: 10px;
+    margin: 0px;
+  }
+  /*Hoja de Ubicacion*/
+  .card {
+    margin: 0px;
+  }
 }
-/*Hoja de Ubicacion*/
-#mainUbi {
-  margin-right: 10px;
-  margin-left: 0px;
-}
-#mainUbi .card {
-  margin-right: 40px;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#navbar {
+  grid-area: navbar;
+}
+#navbar .dropdown-menu {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(222, 202, 191, 0.8) 0%, rgba(154, 114, 210, 0.8) 31%, rgba(88, 68, 166, 0.8) 80%);
+  border: none;
+}
+#navbar .navbar-toggler {
+  border-color: rgba(88, 68, 166, 0);
+}
+#navbar .navbar-toggler:focus,
+#navbar .navbar-toggler:active,
+#navbar .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+#navbar .navbar-brand:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+#navbar ul li a:hover {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+#footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer .copy {
+  font-size: 15px;
+  font-family: Arimo;
+  text-align: center;
+}
+#footer .redes {
+  display: flex;
+}
+#footer .redes .twitter {
+  margin-right: 25px;
+}
+#footer .redes .twitter img:hover {
+  opacity: 0;
+}
+#footer .redes .twitter:hover {
+  background-image: url(../img/logoTwitterColor.png);
+}
+#footer .redes .insta {
+  margin-right: 25px;
+}
+#footer .redes .insta img:hover {
+  opacity: 0;
+}
+#footer .redes .insta:hover {
+  background-image: url(../img/logoInstaColor.png);
+}
+#footer .redes .facebook img:hover {
+  opacity: 0;
+}
+#footer .redes .facebook:hover {
+  background-image: url(../img/logoFacebookColor.png);
+}
+#footer .logoFooter {
+  transform: scale(0.3);
+}
+#footer .logoFooter:hover {
+  transition: 0.5s;
+  transform: scale(32%);
+}
+
+#header {
+  margin: 0px 0px 35px 0px;
 }/*# sourceMappingURL=style.css.map */

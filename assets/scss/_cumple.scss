@@ -2,14 +2,14 @@
     background-color:rgba(222, 202, 191, 0.7);
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto 500px auto auto;
-    grid-template-areas: "navCump navCump navCump navCump"
+    grid-template-rows: auto 500px auto 100px;
+    grid-template-areas: "navbar navbar navbar navbar"
                         "headerCump headerCump headerCump headerCump"
                          "mainCump mainCump mainCump mainCump"
-                         "footerCump footerCump footerCump footerCump";
+                         "footer footer footer footer";
 }
-#navCump{
-    grid-area: navCump;
+#navbar{
+    grid-area: navbar;
 }
 #headerCump{
     grid-area: headerCump;
@@ -20,6 +20,6 @@
 #mainCump{
     grid-area: mainCump;
 }
-#footerCump{
-    grid-area: footerCump;
+#footer{
+    grid-area: footer;
 }
