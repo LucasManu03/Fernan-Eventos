@@ -2,7 +2,7 @@
     background-color:rgba(222, 202, 191, 0.7);
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto 600px auto 100px;
+    grid-template-rows: auto 500px auto 100px;
     grid-template-areas: "navbar navbar navbar navbar"
                         "headerCon headerCon headerCon headerCon"
                          "mainCon mainCon mainCon mainCon"

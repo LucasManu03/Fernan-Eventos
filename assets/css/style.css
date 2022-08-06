@@ -63,7 +63,7 @@
   background-color: rgba(222, 202, 191, 0.7);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 600px auto 100px;
+  grid-template-rows: auto 500px auto 100px;
   grid-template-areas: "navbar navbar navbar navbar" "headerCon headerCon headerCon headerCon" "mainCon mainCon mainCon mainCon" "footer footer footer footer";
 }
 
@@ -187,6 +187,7 @@
 #header {
   grid-area: header;
   background-image: url(../img/photos-by-lanty-O38Id_cyV4M-unsplash\ \(2\).jpg);
+  background-attachment: fixed;
   background-size: cover;
   margin-bottom: 35px;
 }
@@ -367,7 +368,8 @@
 .cotiza .botonEven {
   color: #fff;
   white-space: nowrap;
-  border: solid 1px #fff;
+  border: solid 2px #fff;
+  border-radius: 15px;
   font-size: 23px;
   margin-top: 12px;
   font-weight: lighter;
@@ -383,6 +385,7 @@
 
 .rectangulo1 {
   margin-top: 30px;
+  margin-bottom: 30px;
   background: rgb(154, 114, 210);
   background: linear-gradient(90deg, rgb(154, 114, 210) 0%, rgb(154, 114, 210) 2%, rgb(88, 68, 166) 100%);
   display: flex;
@@ -405,6 +408,7 @@
 
 .rectanguloImagen {
   margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,6 +417,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 .rectanguloImagen .imagenTexto {
   text-align: center;
@@ -424,8 +429,8 @@
   padding: 15px;
 }
 .rectanguloImagen .imagenTexto .parrafoImagen {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-family: Bebas Neue;
+  font-size: 30px;
   padding: 15px;
 }
 
@@ -448,19 +453,26 @@
   color: #fff;
 }
 .rectanguloImagenDos .imagenTextoDos .parrafoImagenDos {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-family: Bebas Neue;
+  font-size: 30px;
   padding: 15px;
   color: #fff;
   list-style: none;
 }
 .rectanguloImagenDos .imagenTextoDos .parrafoImagenDos li {
   padding-top: 20px;
-  text-decoration-line: underline;
 }
 .rectanguloImagenDos .imagenTextoDos .imagenDosRecDos img {
   max-width: 100%;
   height: auto;
+}
+
+.carousel .carousel-inner {
+  width: 99%;
+  margin: 0 auto;
+}
+.carousel .carousel-inner img {
+  max-height: 600px;
 }
 
 #bodyCump {
@@ -488,6 +500,71 @@
 
 #footer {
   grid-area: footer;
+}
+
+.rectanguloImagenInf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 0 auto;
+}
+.rectanguloImagenInf .imagenTextoDos {
+  text-align: center;
+  margin: 20px;
+}
+.rectanguloImagenInf .imagenTextoDos .tituloImagenDos {
+  font-family: Bebas Neue;
+  font-size: 50px;
+  padding: 15px;
+  color: #fff;
+}
+.rectanguloImagenInf .imagenTextoDos .parrafoImagenDos {
+  font-family: Bebas Neue;
+  font-size: 30px;
+  padding: 15px;
+  color: #fff;
+  list-style: none;
+}
+.rectanguloImagenInf .imagenTextoDos .parrafoImagenDos li {
+  padding-top: 20px;
+}
+.rectanguloImagenInf .imagenTextoDos .imagenDosRecDos img {
+  max-width: 100%;
+  height: auto;
+}
+
+.rectanguloImagenAdu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(154, 114, 210);
+  background: linear-gradient(90deg, rgb(154, 114, 210) 0%, rgb(154, 114, 210) 2%, rgb(88, 68, 166) 100%);
+  margin: 0 auto;
+}
+.rectanguloImagenAdu .imagenTextoDos {
+  text-align: center;
+  margin: 20px;
+}
+.rectanguloImagenAdu .imagenTextoDos .tituloImagenDos {
+  font-family: Bebas Neue;
+  font-size: 50px;
+  padding: 15px;
+  color: #fff;
+}
+.rectanguloImagenAdu .imagenTextoDos .parrafoImagenDos {
+  font-family: Bebas Neue;
+  font-size: 30px;
+  padding: 15px;
+  color: #fff;
+  list-style: none;
+}
+.rectanguloImagenAdu .imagenTextoDos .parrafoImagenDos li {
+  padding-top: 20px;
+}
+.rectanguloImagenAdu .imagenTextoDos .imagenDosRecDos img {
+  max-width: 100%;
+  height: auto;
 }
 
 #bodyQuin {
@@ -635,6 +712,13 @@
   }
   #header {
     max-width: 576px;
+  }
+  #footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .copy p {
+    font-size: 12px;
   }
   /*Hoja de Contacto*/
   .formulario {

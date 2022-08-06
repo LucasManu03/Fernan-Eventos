@@ -149,6 +149,16 @@
         max-width: 576px;
          
     }
+    #footer{
+        flex-direction: column;
+        align-items: center;
+        .copy{
+            p{
+                font-size: 12px;
+            }
+        
+        }
+    }
 /*Hoja de Contacto*/
 .formulario{
     margin-left: 70px;

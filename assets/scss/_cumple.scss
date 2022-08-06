@@ -23,3 +23,70 @@
 #footer{
     grid-area: footer;
 }
+.rectanguloImagenInf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0 auto;
+    .imagenTextoDos{
+        text-align: center;
+        margin: 20px;
+        .tituloImagenDos{
+            font-family: Bebas Neue;
+            font-size: 50px;
+            padding: 15px;
+            color: #fff;
+        }
+        .parrafoImagenDos{
+            font-family: Bebas Neue;
+            font-size: 30px;
+            padding: 15px;
+            color: #fff;
+            list-style: none;
+            li{
+                padding-top: 20px;
+            }
+        }
+        .imagenDosRecDos{
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+.rectanguloImagenAdu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(154,114,210);
+    background: linear-gradient(90deg, rgba(154,114,210,1) 0%, rgba(154,114,210,1) 2%, rgba(88,68,166,1) 100%);
+    margin: 0 auto;
+    .imagenTextoDos{
+        text-align: center;
+        margin: 20px;
+        .tituloImagenDos{
+            font-family: Bebas Neue;
+            font-size: 50px;
+            padding: 15px;
+            color: #fff;
+        }
+        .parrafoImagenDos{
+            font-family: Bebas Neue;
+            font-size: 30px;
+            padding: 15px;
+            color: #fff;
+            list-style: none;
+            li{
+                padding-top: 20px;
+            }
+        }
+        .imagenDosRecDos{
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
